@@ -448,7 +448,7 @@
             // btnClose
             // 
             this.btnClose.ForeColor = System.Drawing.Color.Maroon;
-            this.btnClose.Location = new System.Drawing.Point(722, 241);
+            this.btnClose.Location = new System.Drawing.Point(722, 235);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 52);
             this.btnClose.TabIndex = 70;
