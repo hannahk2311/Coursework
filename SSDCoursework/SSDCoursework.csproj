@@ -56,9 +56,33 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="matchingQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matchingQuestions.Designer.cs">
+      <DependentUpon>matchingQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multipleChoiceQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multipleChoiceQuestions.Designer.cs">
+      <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="textQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +95,15 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="matchingQuestions.resx">
+      <DependentUpon>matchingQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multipleChoiceQuestions.resx">
+      <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,7 +112,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="textQuestion.resx">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,7 +134,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\title.png" />
+    <None Include="images\pulse.jpg" />
+    <None Include="images\tick.png" />
+    <None Include="images\abrasion wound.jpg" />
+    <None Include="images\ABRASION.png" />
+    <None Include="images\burn wound.jpg" />
+    <None Include="images\BURN.png" />
+    <None Include="images\contusion wound.jpg" />
+    <None Include="images\CONTUSION.png" />
     <Content Include="images\femaledoc2.jpg" />
+    <None Include="images\First Aid Quiz.png" />
+    <None Include="images\heartbeatGif.gif" />
+    <None Include="images\lightbulb.png" />
+    <None Include="images\first aid logo.png" />
     <Content Include="images\maledoc.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

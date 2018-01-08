@@ -10,11 +10,16 @@ namespace SSDCoursework
     [Serializable]
     public class Player
     {
+        //attributes
+
         string name;
         string password;
         int score;
         int highScore;
         Image avatar;
+
+
+        //constructors
 
         public Player()
         {
@@ -33,6 +38,9 @@ namespace SSDCoursework
             HighScore = highScore;
             Avatar = avatar;
         }
+
+
+        //properties
 
         public string Name
         {
@@ -63,5 +71,7 @@ namespace SSDCoursework
             get { return avatar; }
             set { avatar = value; }
         }
+
+        //methods
     }
 }

@@ -32,7 +32,9 @@ namespace SSDCoursework
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form splashScreen = new splashScreen();
+            splashScreen.Show();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -90,7 +92,17 @@ namespace SSDCoursework
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form multipleChoiceQuestions = new multipleChoiceQuestions(thisPlayer);
+            multipleChoiceQuestions.Show();
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text))
+                btnSubmit.Enabled = false;
+            else
+                btnSubmit.Enabled = true;
         }
     }
 }

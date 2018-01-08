@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,9 @@ namespace SSDCoursework
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form splashScreen = new splashScreen();
+            splashScreen.Show();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -128,10 +131,17 @@ namespace SSDCoursework
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //textQuestion textQuestion = new textQuestion;
-            //textQuestion.ShowDialog();
-            //this.Close();
+            this.Hide();
+            Form matchingQuestions = new matchingQuestions(thisPlayer); //create instance of Form1 and pass it the object thisPlayer
+            matchingQuestions.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(comboBox3.Text) || string.IsNullOrEmpty(comboBox4.Text) || string.IsNullOrEmpty(comboBox5.Text) || string.IsNullOrEmpty(comboBox6.Text) || string.IsNullOrEmpty(comboBox7.Text) || string.IsNullOrEmpty(comboBox8.Text))
+                btnSubmit.Enabled = false;
+            else
+                btnSubmit.Enabled = true;
         }
     }
 }
