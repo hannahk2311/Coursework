@@ -99,10 +99,10 @@ namespace SSDCoursework
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text))
-                btnSubmit.Enabled = false;
-            else
-                btnSubmit.Enabled = true;
+        //    if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text))
+        //        btnSubmit.Enabled = false;
+        //    else
+        //        btnSubmit.Enabled = true;
         }
     }
 }

@@ -98,38 +98,38 @@ namespace SSDCoursework
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if ((radioButton1.Checked) || (radioButton2.Checked) || (radioButton3.Checked))
-            {
-                btnSubmit1.Enabled = true;
-            }
-            else
-            {
-                btnSubmit1.Enabled = false;
-            }
+            //if ((radioButton1.Checked) || (radioButton2.Checked) || (radioButton3.Checked))
+            //{
+            //    btnSubmit1.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnSubmit1.Enabled = false;
+            //}
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if ((radioButton4.Checked) || (radioButton5.Checked) || (radioButton6.Checked))
-            {
-                btnSubmit2.Enabled = true;
-            }
-            else
-            {
-                btnSubmit2.Enabled = false;
-            }
+            //if ((radioButton4.Checked) || (radioButton5.Checked) || (radioButton6.Checked))
+            //{
+            //    btnSubmit2.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnSubmit2.Enabled = false;
+            //}
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            if ((radioButton7.Checked) || (radioButton8.Checked) || (radioButton9.Checked))
-            {
-                btnSubmit3.Enabled = true;
-            }
-            else
-            {
-                btnSubmit3.Enabled = false;
-            }
+            //if ((radioButton7.Checked) || (radioButton8.Checked) || (radioButton9.Checked))
+            //{
+            //    btnSubmit3.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnSubmit3.Enabled = false;
+            //}
         }
     }
 }

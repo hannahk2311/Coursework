@@ -138,10 +138,10 @@ namespace SSDCoursework
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(comboBox3.Text) || string.IsNullOrEmpty(comboBox4.Text) || string.IsNullOrEmpty(comboBox5.Text) || string.IsNullOrEmpty(comboBox6.Text) || string.IsNullOrEmpty(comboBox7.Text) || string.IsNullOrEmpty(comboBox8.Text))
-                btnSubmit.Enabled = false;
-            else
-                btnSubmit.Enabled = true;
+            //if (string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(comboBox3.Text) || string.IsNullOrEmpty(comboBox4.Text) || string.IsNullOrEmpty(comboBox5.Text) || string.IsNullOrEmpty(comboBox6.Text) || string.IsNullOrEmpty(comboBox7.Text) || string.IsNullOrEmpty(comboBox8.Text))
+            //    btnSubmit.Enabled = false;
+            //else
+            //    btnSubmit.Enabled = true;
         }
     }
 }

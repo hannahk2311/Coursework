@@ -81,6 +81,11 @@ namespace SSDCoursework
             listboxQuestions.Show();
         }
 
+
+
+
+
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //"login" section
@@ -148,18 +153,18 @@ namespace SSDCoursework
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrEmpty(txtRepeat.Text))
-                btnCreate.Enabled = false;
-            else
-                btnCreate.Enabled = true;
+            //if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrEmpty(txtRepeat.Text))
+            //    btnCreate.Enabled = false;
+            //else
+            //    btnCreate.Enabled = true;
         }
 
         private void txtLoginName_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtLoginName.Text) || string.IsNullOrEmpty(txtLoginPassword.Text))
-                btnLogin.Enabled = false;
-            else
-                btnLogin.Enabled = true;
+            //if (string.IsNullOrEmpty(txtLoginName.Text) || string.IsNullOrEmpty(txtLoginPassword.Text))
+            //    btnLogin.Enabled = false;
+            //else
+            //    btnLogin.Enabled = true;
         }
     }
 }
