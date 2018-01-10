@@ -54,6 +54,17 @@ namespace SSDCoursework
         private void btnCreate_Click(object sender, EventArgs e)
         {
             //"sign in" section
+
+            if (txtName.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a suitable username");
+            }
+
+            if (txtPassword.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a suitable Password");
+            }
+
             thisPlayer.Name = txtName.Text;
             thisPlayer.Password = txtPassword.Text;
 
@@ -80,11 +91,6 @@ namespace SSDCoursework
             Form listboxQuestions = new listboxQuestions(thisPlayer);
             listboxQuestions.Show();
         }
-
-
-
-
-
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
