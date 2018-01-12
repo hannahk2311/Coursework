@@ -32,9 +32,23 @@ namespace SSDCoursework
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form splashScreen = new splashScreen();
-            splashScreen.Show();
+            //forgiveness
+            DialogResult result =
+                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.OK))
+            {
+                this.Hide();
+                Form splashScreen = new splashScreen();
+                splashScreen.Show();
+
+                //Application.Exit();
+            }
+            else
+            {
+                //Do Nothing
+            }
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)

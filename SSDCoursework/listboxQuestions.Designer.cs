@@ -347,7 +347,7 @@
             this.comboBox5.Location = new System.Drawing.Point(418, 352);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(52, 24);
-            this.comboBox5.TabIndex = 58;
+            this.comboBox5.TabIndex = 4;
             // 
             // comboBox1
             // 
@@ -356,7 +356,7 @@
             this.comboBox1.Location = new System.Drawing.Point(532, 169);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);
-            this.comboBox1.TabIndex = 59;
+            this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox3
@@ -366,7 +366,7 @@
             this.comboBox3.Location = new System.Drawing.Point(590, 231);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(89, 24);
-            this.comboBox3.TabIndex = 60;
+            this.comboBox3.TabIndex = 2;
             // 
             // comboBox2
             // 
@@ -375,7 +375,7 @@
             this.comboBox2.Location = new System.Drawing.Point(327, 230);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(86, 24);
-            this.comboBox2.TabIndex = 61;
+            this.comboBox2.TabIndex = 1;
             // 
             // comboBox4
             // 
@@ -384,7 +384,7 @@
             this.comboBox4.Location = new System.Drawing.Point(379, 294);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(63, 24);
-            this.comboBox4.TabIndex = 62;
+            this.comboBox4.TabIndex = 3;
             // 
             // comboBox6
             // 
@@ -393,7 +393,7 @@
             this.comboBox6.Location = new System.Drawing.Point(59, 385);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(54, 24);
-            this.comboBox6.TabIndex = 63;
+            this.comboBox6.TabIndex = 5;
             // 
             // comboBox7
             // 
@@ -402,7 +402,7 @@
             this.comboBox7.Location = new System.Drawing.Point(292, 446);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(282, 24);
-            this.comboBox7.TabIndex = 64;
+            this.comboBox7.TabIndex = 6;
             // 
             // comboBox8
             // 
@@ -411,7 +411,7 @@
             this.comboBox8.Location = new System.Drawing.Point(454, 517);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(120, 24);
-            this.comboBox8.TabIndex = 65;
+            this.comboBox8.TabIndex = 7;
             // 
             // label22
             // 
@@ -444,7 +444,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(932, 136);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(113, 52);
-            this.btnSubmit.TabIndex = 68;
+            this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit Answers";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -458,7 +458,7 @@
             this.btnNext.Location = new System.Drawing.Point(932, 215);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(113, 52);
-            this.btnNext.TabIndex = 69;
+            this.btnNext.TabIndex = 9;
             this.btnNext.Text = "Next Question";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -472,7 +472,7 @@
             this.btnClose.Location = new System.Drawing.Point(932, 294);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 52);
-            this.btnClose.TabIndex = 70;
+            this.btnClose.TabIndex = 10;
             this.btnClose.Text = "Close Quiz";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);

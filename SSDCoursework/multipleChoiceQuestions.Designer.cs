@@ -117,7 +117,7 @@
             this.radioButton1.Location = new System.Drawing.Point(18, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(197, 20);
-            this.radioButton1.TabIndex = 3;
+            this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "They tell you that it\'s blocked";
             this.radioButton1.UseVisualStyleBackColor = true;

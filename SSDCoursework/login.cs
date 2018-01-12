@@ -54,6 +54,17 @@ namespace SSDCoursework
         private void btnCreate_Click(object sender, EventArgs e)
         {
             //"sign in" section
+
+            if (txtName.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a suitable username");
+            }
+
+            if (txtPassword.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a suitable Password");
+            }
+
             thisPlayer.Name = txtName.Text;
             thisPlayer.Password = txtPassword.Text;
 
@@ -80,11 +91,6 @@ namespace SSDCoursework
             Form listboxQuestions = new listboxQuestions(thisPlayer);
             listboxQuestions.Show();
         }
-
-
-
-
-
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -137,11 +143,19 @@ namespace SSDCoursework
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            //if close button is pressed they will be taken back to splash screen
-            Form splashScreen = new splashScreen();
-            splashScreen.Show();
+            //forgiveness
+            DialogResult result =
+                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.OK))
+            {
+                Application.Exit();
+            }
+            else
+            {
+                //Do Nothing
+            }
         }
 
         private void login_FormClosed(object sender, FormClosedEventArgs e)

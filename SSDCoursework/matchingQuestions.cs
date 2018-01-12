@@ -13,7 +13,7 @@ namespace SSDCoursework
     public partial class matchingQuestions : Form
     {
         Player thisPlayer;
-        public int Score { get; set; }
+        public int Score;
         //variable to store picture tag
         public static String selectedPicture;
 
@@ -154,9 +154,23 @@ namespace SSDCoursework
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form splashScreen = new splashScreen();
-            splashScreen.Show();
+            //forgiveness
+            DialogResult result =
+                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.OK))
+            {
+                this.Hide();
+                Form splashScreen = new splashScreen();
+                splashScreen.Show();
+
+                //Application.Exit();
+            }
+            else
+            {
+                //Do Nothing
+            }
         }
     }
 }
