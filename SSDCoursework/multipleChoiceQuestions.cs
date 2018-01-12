@@ -14,7 +14,7 @@ namespace SSDCoursework
     {
         //declare any classes
         Player thisPlayer;
-        public int Score { get; set; }
+        public int Score;
 
         public multipleChoiceQuestions(Player ThisPlayer)
         {
