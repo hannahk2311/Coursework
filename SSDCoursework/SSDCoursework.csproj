@@ -44,12 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="helpForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="helpForm.Designer.cs">
-      <DependentUpon>helpForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="listboxQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +89,6 @@
     <Compile Include="textQuestion.Designer.cs">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="helpForm.resx">
-      <DependentUpon>helpForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,13 +145,15 @@
     <None Include="images\BURN.png" />
     <None Include="images\contusion wound.jpg" />
     <None Include="images\CONTUSION.png" />
-    <Content Include="helpData\help.txt" />
     <Content Include="images\femaledoc2.jpg" />
     <None Include="images\First Aid Quiz.png" />
     <None Include="images\heartbeatGif.gif" />
     <None Include="images\lightbulb.png" />
     <None Include="images\first aid logo.png" />
     <Content Include="images\maledoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="helpData\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

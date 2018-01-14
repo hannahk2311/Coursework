@@ -181,21 +181,6 @@ namespace SSDCoursework.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to display this
-        ///
-        ///display that
-        ///
-        ///show this
-        ///
-        ///show that.
-        /// </summary>
-        internal static string help {
-            get {
-                return ResourceManager.GetString("help", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap lightbulb {
