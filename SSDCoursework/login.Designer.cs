@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtLoginPassword = new System.Windows.Forms.TextBox();
             this.txtLoginName = new System.Windows.Forms.TextBox();
@@ -245,11 +244,11 @@
             // imgAvatar2
             // 
             this.imgAvatar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgAvatar2.Image = ((System.Drawing.Image)(resources.GetObject("imgAvatar2.Image")));
-            this.imgAvatar2.Location = new System.Drawing.Point(183, 344);
+            this.imgAvatar2.Image = global::SSDCoursework.Properties.Resources._045_ambulance;
+            this.imgAvatar2.Location = new System.Drawing.Point(189, 344);
             this.imgAvatar2.Name = "imgAvatar2";
-            this.imgAvatar2.Size = new System.Drawing.Size(93, 133);
-            this.imgAvatar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgAvatar2.Size = new System.Drawing.Size(131, 133);
+            this.imgAvatar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgAvatar2.TabIndex = 28;
             this.imgAvatar2.TabStop = false;
             this.imgAvatar2.Click += new System.EventHandler(this.imgAvatar2_Click);
@@ -257,10 +256,10 @@
             // imgAvatar1
             // 
             this.imgAvatar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgAvatar1.Image = ((System.Drawing.Image)(resources.GetObject("imgAvatar1.Image")));
-            this.imgAvatar1.Location = new System.Drawing.Point(60, 344);
+            this.imgAvatar1.Image = global::SSDCoursework.Properties.Resources._037_first_aid_kit;
+            this.imgAvatar1.Location = new System.Drawing.Point(36, 344);
             this.imgAvatar1.Name = "imgAvatar1";
-            this.imgAvatar1.Size = new System.Drawing.Size(92, 133);
+            this.imgAvatar1.Size = new System.Drawing.Size(131, 133);
             this.imgAvatar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgAvatar1.TabIndex = 27;
             this.imgAvatar1.TabStop = false;

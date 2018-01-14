@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="helpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpForm.Designer.cs">
+      <DependentUpon>helpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="listboxQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="textQuestion.Designer.cs">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="helpForm.resx">
+      <DependentUpon>helpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +143,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\045-ambulance.png" />
+    <None Include="Resources\037-first-aid-kit.png" />
     <None Include="images\title.png" />
     <None Include="images\pulse.jpg" />
     <None Include="images\tick.png" />
@@ -143,6 +154,7 @@
     <None Include="images\BURN.png" />
     <None Include="images\contusion wound.jpg" />
     <None Include="images\CONTUSION.png" />
+    <Content Include="helpData\help.txt" />
     <Content Include="images\femaledoc2.jpg" />
     <None Include="images\First Aid Quiz.png" />
     <None Include="images\heartbeatGif.gif" />

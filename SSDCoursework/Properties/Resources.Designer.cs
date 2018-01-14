@@ -63,6 +63,26 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _037_first_aid_kit {
+            get {
+                object obj = ResourceManager.GetObject("_037_first_aid_kit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _045_ambulance {
+            get {
+                object obj = ResourceManager.GetObject("_045_ambulance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ABRASION {
             get {
                 object obj = ResourceManager.GetObject("ABRASION", resourceCulture);
@@ -157,6 +177,21 @@ namespace SSDCoursework.Properties {
             get {
                 object obj = ResourceManager.GetObject("heartbeatGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to display this
+        ///
+        ///display that
+        ///
+        ///show this
+        ///
+        ///show that.
+        /// </summary>
+        internal static string help {
+            get {
+                return ResourceManager.GetString("help", resourceCulture);
             }
         }
         
