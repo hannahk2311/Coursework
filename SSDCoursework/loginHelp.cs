@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SSDCoursework
+namespace SSDCoursework.helpData
 {
-    public partial class helpForm : Form
+    public partial class loginHelp : Form
     {
-        public helpForm()
+        public loginHelp()
         {
             InitializeComponent();
-        }
-
-        private void helpForm_Load(object sender, EventArgs e)
-        {
-            rtbHelp.Text = Properties.Resources.help;
         }
     }
 }

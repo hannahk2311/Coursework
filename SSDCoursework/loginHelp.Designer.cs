@@ -1,6 +1,6 @@
-﻿namespace SSDCoursework
+﻿namespace SSDCoursework.helpData
 {
-    partial class helpForm
+    partial class loginHelp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rtbHelp = new System.Windows.Forms.RichTextBox();
-            this.SuspendLayout();
-            // 
-            // rtbHelp
-            // 
-            this.rtbHelp.Location = new System.Drawing.Point(29, 42);
-            this.rtbHelp.Name = "rtbHelp";
-            this.rtbHelp.Size = new System.Drawing.Size(654, 433);
-            this.rtbHelp.TabIndex = 0;
-            this.rtbHelp.Text = "";
-            // 
-            // helpForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 507);
-            this.Controls.Add(this.rtbHelp);
-            this.Name = "helpForm";
-            this.Text = "helpForm";
-            this.Load += new System.EventHandler(this.helpForm_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "loginHelp";
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox rtbHelp;
     }
 }

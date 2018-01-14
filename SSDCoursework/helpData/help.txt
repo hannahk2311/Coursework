@@ -1,7 +1,0 @@
-﻿display this
-
-display that
-
-show this
-
-show that
