@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
     <Compile Include="listboxQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,12 @@
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginHelp.Designer.cs">
+      <DependentUpon>loginHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="matchingQuestions.cs">
       <SubType>Form</SubType>
@@ -89,11 +101,17 @@
     <Compile Include="textQuestion.Designer.cs">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginHelp.resx">
+      <DependentUpon>loginHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="matchingQuestions.resx">
       <DependentUpon>matchingQuestions.cs</DependentUpon>
@@ -145,16 +163,16 @@
     <None Include="images\BURN.png" />
     <None Include="images\contusion wound.jpg" />
     <None Include="images\CONTUSION.png" />
+    <Content Include="helpData\helpLogin.txt" />
     <Content Include="images\femaledoc2.jpg" />
     <None Include="images\First Aid Quiz.png" />
     <None Include="images\heartbeatGif.gif" />
     <None Include="images\lightbulb.png" />
     <None Include="images\first aid logo.png" />
+    <None Include="images\help.png" />
     <Content Include="images\maledoc.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="helpData\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

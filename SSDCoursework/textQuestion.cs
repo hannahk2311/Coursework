@@ -13,7 +13,7 @@ namespace SSDCoursework
     public partial class textQuestion : Form
     {
         Player thisPlayer;
-        public int Score { get; set; }
+        public int Score;
 
         public textQuestion(Player ThisPlayer)
         {
@@ -23,6 +23,7 @@ namespace SSDCoursework
             lblScore.Text = thisPlayer.Score.ToString();
             lblHighScore.Text = thisPlayer.HighScore.ToString();
             imgAvatar3.Image = thisPlayer.Avatar;
+            Score = thisPlayer.Score;
         }
 
         private void textQuestion_Load(object sender, EventArgs e)
@@ -107,6 +108,7 @@ namespace SSDCoursework
         private void btnNext_Click(object sender, EventArgs e)
         {
             this.Hide();
+            thisPlayer.Score = Score;
             Form multipleChoiceQuestions = new multipleChoiceQuestions(thisPlayer);
             multipleChoiceQuestions.Show();
         }

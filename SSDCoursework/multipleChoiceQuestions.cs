@@ -25,10 +25,12 @@ namespace SSDCoursework
             lblScore.Text = thisPlayer.Score.ToString();
             lblHighScore.Text = thisPlayer.HighScore.ToString();
             imgAvatar.Image = thisPlayer.Avatar;
+            Score = thisPlayer.Score;
         }
 
         private void multipleChoiceQuestions_Load(object sender, EventArgs e)
         {
+            //auto check the first button on each panel
             radioButton1.Checked = true;
             radioButton4.Checked = true;
             radioButton7.Checked = true;
@@ -36,6 +38,7 @@ namespace SSDCoursework
 
         private void btnSubmit1_Click(object sender, EventArgs e)
         {
+            //correct answer
             if (radioButton2.Checked == true)
             {
                 MessageBox.Show("That's correct!");

@@ -71,6 +71,7 @@ namespace SSDCoursework
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
             {
+                //end quiz and go to slash screen
                 this.Hide();
                 Form splashScreen = new splashScreen();
                 splashScreen.Show();
@@ -145,7 +146,9 @@ namespace SSDCoursework
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            //advance to next question form
             this.Hide();
+            thisPlayer.Score = Score;
             Form matchingQuestions = new matchingQuestions(thisPlayer); //create instance of Form1 and pass it the object thisPlayer
             matchingQuestions.Show();
         }

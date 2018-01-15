@@ -180,5 +180,11 @@ namespace SSDCoursework
             //else
             //    btnLogin.Enabled = true;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form loginHelp = new loginHelp();
+            loginHelp.Show();
+        }
     }
 }

@@ -12,8 +12,11 @@ namespace SSDCoursework
 {
     public partial class matchingQuestions : Form
     {
+        //declare classes
         Player thisPlayer;
-        public int Score;
+        public int Score ;
+
+
         //variable to store picture tag
         public static String selectedPicture;
 
@@ -25,6 +28,7 @@ namespace SSDCoursework
             lblScore.Text = thisPlayer.Score.ToString();
             lblHighScore.Text = thisPlayer.HighScore.ToString();
             imgAvatar.Image = thisPlayer.Avatar;
+            Score = thisPlayer.Score;
         }
 
         private void matchingQuestions_Load(object sender, EventArgs e)
@@ -62,9 +66,11 @@ namespace SSDCoursework
             imgBurnAns.AllowDrop = false;
             if (selectedPicture == imgBurnAns.Tag.ToString())
             {
+                //if it's correct
                 imgTick3.Visible = true;
                 Score += 1;
                 selectedPicture = "";
+                MessageBox.Show(Score.ToString());
                 lblScore.Text = Score.ToString();
             }
         }
@@ -94,6 +100,7 @@ namespace SSDCoursework
             imgAbrasionAns.AllowDrop = false;
             if (selectedPicture == imgAbrasionAns.Tag.ToString())
             {
+                //if it's correct
                 imgTick1.Visible = true;
                 Score += 1;
                 selectedPicture = "";
@@ -126,6 +133,7 @@ namespace SSDCoursework
             imgContusionAns.AllowDrop = false;
             if (selectedPicture == imgContusionAns.Tag.ToString())
             {
+                //if it's correct
                 imgTick2.Visible = true;
                 Score += 1;
                 selectedPicture = "";
@@ -147,7 +155,9 @@ namespace SSDCoursework
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            //advance to next question form
             this.Hide();
+            thisPlayer.Score = Score;
             Form textQuestion = new textQuestion(thisPlayer);
             textQuestion.Show();
         }
@@ -161,6 +171,7 @@ namespace SSDCoursework
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
             {
+                //end quiz and go back to splash screen
                 this.Hide();
                 Form splashScreen = new splashScreen();
                 splashScreen.Show();

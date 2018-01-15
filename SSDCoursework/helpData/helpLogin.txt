@@ -1,1 +1,14 @@
-﻿
+﻿This is the Login form where you can create a new account or log into an existing one.
+
+
+Signing Up:
+ ~ You should create a suitable username and password.
+ ~ You must repeat your password to ensure you typed it correctly.
+ ~ If the username is the same as an existing account you will be prompted to choose a different one.
+ ~ You must then choose an avatar of your liking and then click [Create].
+
+
+Logging In:
+ ~ If you already have an account, enter your username and password.
+ ~ You should then click [Log In] and if your credentials are correct you will advance to the quiz.
+ ~ If you enter the wrong details you will be prompted to try again or create a new account.

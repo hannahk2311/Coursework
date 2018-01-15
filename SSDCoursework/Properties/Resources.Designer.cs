@@ -183,6 +183,32 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help {
+            get {
+                object obj = ResourceManager.GetObject("help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the Login form where you can create a new account or log into an existing one.
+        ///
+        ///In the &apos;Sign Up&apos; section of the form you are asked to create a suitable username and password
+        ///You must repeat your password to ensure you typed it correctly.
+        ///If the username is the same as an existing account you will be prompted to choose a different one.
+        ///You must then choose an avatar of your liking and then click [Create].
+        ///
+        ///in the &apos;Log In&apos; section you must enter the username and password of your already existin [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string helpLogin {
+            get {
+                return ResourceManager.GetString("helpLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lightbulb {
             get {
                 object obj = ResourceManager.GetObject("lightbulb", resourceCulture);
