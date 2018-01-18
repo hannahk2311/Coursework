@@ -44,12 +44,12 @@
             this.label15 = new System.Windows.Forms.Label();
             this.lblHighScore = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.img1 = new System.Windows.Forms.PictureBox();
-            this.img5 = new System.Windows.Forms.PictureBox();
-            this.img4 = new System.Windows.Forms.PictureBox();
-            this.img6 = new System.Windows.Forms.PictureBox();
-            this.img2 = new System.Windows.Forms.PictureBox();
-            this.img3 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect1 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect5 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect4 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect6 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect2 = new System.Windows.Forms.PictureBox();
+            this.imgCorrect3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.imgAvatar3 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -63,14 +63,26 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
+            this.imgIncorrect1 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect2 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect3 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect4 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect5 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect6 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -158,7 +170,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(354, 214);
+            this.label10.Location = new System.Drawing.Point(378, 223);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(216, 120);
             this.label10.TabIndex = 9;
@@ -238,83 +250,83 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(432, 190);
+            this.label1.Location = new System.Drawing.Point(456, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 24);
             this.label1.TabIndex = 16;
             this.label1.Text = "HINT: ";
             // 
-            // img1
+            // imgCorrect1
             // 
-            this.img1.Image = ((System.Drawing.Image)(resources.GetObject("img1.Image")));
-            this.img1.Location = new System.Drawing.Point(306, 81);
-            this.img1.Name = "img1";
-            this.img1.Size = new System.Drawing.Size(42, 42);
-            this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img1.TabIndex = 17;
-            this.img1.TabStop = false;
-            this.img1.Visible = false;
+            this.imgCorrect1.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect1.Image")));
+            this.imgCorrect1.Location = new System.Drawing.Point(306, 81);
+            this.imgCorrect1.Name = "imgCorrect1";
+            this.imgCorrect1.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect1.TabIndex = 17;
+            this.imgCorrect1.TabStop = false;
+            this.imgCorrect1.Visible = false;
             // 
-            // img5
+            // imgCorrect5
             // 
-            this.img5.Image = ((System.Drawing.Image)(resources.GetObject("img5.Image")));
-            this.img5.Location = new System.Drawing.Point(306, 294);
-            this.img5.Name = "img5";
-            this.img5.Size = new System.Drawing.Size(42, 42);
-            this.img5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img5.TabIndex = 18;
-            this.img5.TabStop = false;
-            this.img5.Visible = false;
+            this.imgCorrect5.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect5.Image")));
+            this.imgCorrect5.Location = new System.Drawing.Point(306, 294);
+            this.imgCorrect5.Name = "imgCorrect5";
+            this.imgCorrect5.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect5.TabIndex = 18;
+            this.imgCorrect5.TabStop = false;
+            this.imgCorrect5.Visible = false;
             // 
-            // img4
+            // imgCorrect4
             // 
-            this.img4.Image = ((System.Drawing.Image)(resources.GetObject("img4.Image")));
-            this.img4.Location = new System.Drawing.Point(306, 242);
-            this.img4.Name = "img4";
-            this.img4.Size = new System.Drawing.Size(42, 42);
-            this.img4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img4.TabIndex = 19;
-            this.img4.TabStop = false;
-            this.img4.Visible = false;
+            this.imgCorrect4.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect4.Image")));
+            this.imgCorrect4.Location = new System.Drawing.Point(306, 242);
+            this.imgCorrect4.Name = "imgCorrect4";
+            this.imgCorrect4.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect4.TabIndex = 19;
+            this.imgCorrect4.TabStop = false;
+            this.imgCorrect4.Visible = false;
             // 
-            // img6
+            // imgCorrect6
             // 
-            this.img6.Image = ((System.Drawing.Image)(resources.GetObject("img6.Image")));
-            this.img6.Location = new System.Drawing.Point(306, 350);
-            this.img6.Name = "img6";
-            this.img6.Size = new System.Drawing.Size(42, 42);
-            this.img6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img6.TabIndex = 20;
-            this.img6.TabStop = false;
-            this.img6.Visible = false;
+            this.imgCorrect6.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect6.Image")));
+            this.imgCorrect6.Location = new System.Drawing.Point(306, 350);
+            this.imgCorrect6.Name = "imgCorrect6";
+            this.imgCorrect6.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect6.TabIndex = 20;
+            this.imgCorrect6.TabStop = false;
+            this.imgCorrect6.Visible = false;
             // 
-            // img2
+            // imgCorrect2
             // 
-            this.img2.Image = ((System.Drawing.Image)(resources.GetObject("img2.Image")));
-            this.img2.Location = new System.Drawing.Point(306, 134);
-            this.img2.Name = "img2";
-            this.img2.Size = new System.Drawing.Size(42, 42);
-            this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img2.TabIndex = 21;
-            this.img2.TabStop = false;
-            this.img2.Visible = false;
+            this.imgCorrect2.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect2.Image")));
+            this.imgCorrect2.Location = new System.Drawing.Point(306, 134);
+            this.imgCorrect2.Name = "imgCorrect2";
+            this.imgCorrect2.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect2.TabIndex = 21;
+            this.imgCorrect2.TabStop = false;
+            this.imgCorrect2.Visible = false;
             // 
-            // img3
+            // imgCorrect3
             // 
-            this.img3.Image = ((System.Drawing.Image)(resources.GetObject("img3.Image")));
-            this.img3.Location = new System.Drawing.Point(306, 185);
-            this.img3.Name = "img3";
-            this.img3.Size = new System.Drawing.Size(42, 42);
-            this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img3.TabIndex = 22;
-            this.img3.TabStop = false;
-            this.img3.Visible = false;
+            this.imgCorrect3.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect3.Image")));
+            this.imgCorrect3.Location = new System.Drawing.Point(306, 185);
+            this.imgCorrect3.Name = "imgCorrect3";
+            this.imgCorrect3.Size = new System.Drawing.Size(42, 42);
+            this.imgCorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgCorrect3.TabIndex = 22;
+            this.imgCorrect3.TabStop = false;
+            this.imgCorrect3.Visible = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(399, 88);
+            this.pictureBox7.Location = new System.Drawing.Point(423, 97);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(105, 99);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -332,6 +344,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox1.Location = new System.Drawing.Point(72, 91);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(228, 20);
@@ -340,6 +353,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox2.Location = new System.Drawing.Point(72, 144);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(228, 20);
@@ -347,6 +361,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox3.Location = new System.Drawing.Point(72, 199);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(228, 20);
@@ -354,6 +369,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox4.Location = new System.Drawing.Point(72, 252);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(228, 20);
@@ -361,6 +377,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox5.Location = new System.Drawing.Point(72, 304);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(228, 20);
@@ -368,6 +385,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textBox6.Location = new System.Drawing.Point(72, 360);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(228, 20);
@@ -411,7 +429,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 52);
             this.btnClose.TabIndex = 33;
-            this.btnClose.Text = "Close Quiz";
+            this.btnClose.Text = "Log Out";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -420,7 +438,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Green;
-            this.label12.Location = new System.Drawing.Point(586, 318);
+            this.label12.Location = new System.Drawing.Point(588, 337);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 16);
             this.label12.TabIndex = 35;
@@ -438,6 +456,72 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Textbox Question";
             // 
+            // imgIncorrect1
+            // 
+            this.imgIncorrect1.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect1.Location = new System.Drawing.Point(320, 81);
+            this.imgIncorrect1.Name = "imgIncorrect1";
+            this.imgIncorrect1.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect1.TabIndex = 36;
+            this.imgIncorrect1.TabStop = false;
+            this.imgIncorrect1.Visible = false;
+            // 
+            // imgIncorrect2
+            // 
+            this.imgIncorrect2.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect2.Location = new System.Drawing.Point(320, 134);
+            this.imgIncorrect2.Name = "imgIncorrect2";
+            this.imgIncorrect2.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect2.TabIndex = 37;
+            this.imgIncorrect2.TabStop = false;
+            this.imgIncorrect2.Visible = false;
+            // 
+            // imgIncorrect3
+            // 
+            this.imgIncorrect3.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect3.Location = new System.Drawing.Point(320, 185);
+            this.imgIncorrect3.Name = "imgIncorrect3";
+            this.imgIncorrect3.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect3.TabIndex = 38;
+            this.imgIncorrect3.TabStop = false;
+            this.imgIncorrect3.Visible = false;
+            // 
+            // imgIncorrect4
+            // 
+            this.imgIncorrect4.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect4.Location = new System.Drawing.Point(320, 242);
+            this.imgIncorrect4.Name = "imgIncorrect4";
+            this.imgIncorrect4.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect4.TabIndex = 39;
+            this.imgIncorrect4.TabStop = false;
+            this.imgIncorrect4.Visible = false;
+            // 
+            // imgIncorrect5
+            // 
+            this.imgIncorrect5.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect5.Location = new System.Drawing.Point(320, 294);
+            this.imgIncorrect5.Name = "imgIncorrect5";
+            this.imgIncorrect5.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect5.TabIndex = 40;
+            this.imgIncorrect5.TabStop = false;
+            this.imgIncorrect5.Visible = false;
+            // 
+            // imgIncorrect6
+            // 
+            this.imgIncorrect6.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect6.Location = new System.Drawing.Point(320, 350);
+            this.imgIncorrect6.Name = "imgIncorrect6";
+            this.imgIncorrect6.Size = new System.Drawing.Size(42, 42);
+            this.imgIncorrect6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect6.TabIndex = 41;
+            this.imgIncorrect6.TabStop = false;
+            this.imgIncorrect6.Visible = false;
+            // 
             // textQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,6 +530,12 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(859, 490);
+            this.Controls.Add(this.imgIncorrect6);
+            this.Controls.Add(this.imgIncorrect5);
+            this.Controls.Add(this.imgIncorrect4);
+            this.Controls.Add(this.imgIncorrect3);
+            this.Controls.Add(this.imgIncorrect2);
+            this.Controls.Add(this.imgIncorrect1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
@@ -459,12 +549,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.imgAvatar3);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.img3);
-            this.Controls.Add(this.img2);
-            this.Controls.Add(this.img6);
-            this.Controls.Add(this.img4);
-            this.Controls.Add(this.img5);
-            this.Controls.Add(this.img1);
+            this.Controls.Add(this.imgCorrect3);
+            this.Controls.Add(this.imgCorrect2);
+            this.Controls.Add(this.imgCorrect6);
+            this.Controls.Add(this.imgCorrect4);
+            this.Controls.Add(this.imgCorrect5);
+            this.Controls.Add(this.imgCorrect1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.label15);
@@ -484,14 +574,20 @@
             this.Name = "textQuestion";
             this.Text = "textQuestion";
             this.Load += new System.EventHandler(this.textQuestion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCorrect3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,12 +610,12 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblHighScore;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox img1;
-        private System.Windows.Forms.PictureBox img5;
-        private System.Windows.Forms.PictureBox img4;
-        private System.Windows.Forms.PictureBox img6;
-        private System.Windows.Forms.PictureBox img2;
-        private System.Windows.Forms.PictureBox img3;
+        private System.Windows.Forms.PictureBox imgCorrect1;
+        private System.Windows.Forms.PictureBox imgCorrect5;
+        private System.Windows.Forms.PictureBox imgCorrect4;
+        private System.Windows.Forms.PictureBox imgCorrect6;
+        private System.Windows.Forms.PictureBox imgCorrect2;
+        private System.Windows.Forms.PictureBox imgCorrect3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox imgAvatar3;
         private System.Windows.Forms.TextBox textBox1;
@@ -533,5 +629,11 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox imgIncorrect1;
+        private System.Windows.Forms.PictureBox imgIncorrect2;
+        private System.Windows.Forms.PictureBox imgIncorrect3;
+        private System.Windows.Forms.PictureBox imgIncorrect4;
+        private System.Windows.Forms.PictureBox imgIncorrect5;
+        private System.Windows.Forms.PictureBox imgIncorrect6;
     }
 }

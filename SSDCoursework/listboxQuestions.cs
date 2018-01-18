@@ -66,7 +66,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBox.Show("Are you sure you want to log out?", "Log out?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -89,58 +89,90 @@ namespace SSDCoursework
             //COMBO BOX 1
             if(comboBox1.SelectedIndex == 0)
             {
-                pictureBox1.Visible = true;
+                imgCorrect1.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect1.Visible = true;
             }
             //COMBO BOX 2
             if (comboBox2.SelectedIndex == 1)
             {
-                pictureBox2.Visible = true;
+                imgCorrect2.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect2.Visible = true;
             }
             //COMBO BOX 3
             if (comboBox3.SelectedIndex == 1)
             {
-                pictureBox3.Visible = true;
+                imgCorrect3.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect3.Visible = true;
             }
             //COMBO BOX 4
             if (comboBox4.SelectedIndex == 1)
             {
-                pictureBox4.Visible = true;
+                imgCorrect4.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect4.Visible = true;
             }
             //COMBO BOX 5
             if (comboBox5.SelectedIndex == 0)
             {
-                pictureBox5.Visible = true;
+                imgCorrect5.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect5.Visible = true;
             }
             //COMBO BOX 6
             if (comboBox6.SelectedIndex == 1)
             {
-                pictureBox6.Visible = true;
+                imgCorrect6.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect6.Visible = true;
             }
             //COMBO BOX 7
             if (comboBox7.SelectedIndex == 2)
             {
-                pictureBox7.Visible = true;
+                imgCorrect7.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect7.Visible = true;
             }
             //COMBO BOX 8
             if (comboBox8.SelectedIndex == 3)
             {
-                pictureBox8.Visible = true;
+                imgCorrect8.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect8.Visible = true;
             }
         }
 

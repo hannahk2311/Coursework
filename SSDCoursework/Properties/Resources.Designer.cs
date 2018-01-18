@@ -143,16 +143,6 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap femaledoc2 {
-            get {
-                object obj = ResourceManager.GetObject("femaledoc2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap first_aid_logo {
             get {
                 object obj = ResourceManager.GetObject("first_aid_logo", resourceCulture);
@@ -193,12 +183,17 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized string similar to This is the Login form where you can create a new account or log into an existing one.
         ///
-        ///In the &apos;Sign Up&apos; section of the form you are asked to create a suitable username and password
-        ///You must repeat your password to ensure you typed it correctly.
-        ///If the username is the same as an existing account you will be prompted to choose a different one.
-        ///You must then choose an avatar of your liking and then click [Create].
         ///
-        ///in the &apos;Log In&apos; section you must enter the username and password of your already existin [rest of string was truncated]&quot;;.
+        ///Signing Up:
+        /// ~ You should create a suitable username and password.
+        /// ~ You must repeat your password to ensure you typed it correctly.
+        /// ~ If the username is the same as an existing account you will be prompted to choose a different one.
+        /// ~ You must then choose an avatar of your liking and then click [Create].
+        ///
+        ///
+        ///Logging In:
+        /// ~ If you already have an account, enter your username and password.
+        /// ~ You should then [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string helpLogin {
             get {
@@ -209,9 +204,9 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap lightbulb {
+        internal static System.Drawing.Bitmap incorrect {
             get {
-                object obj = ResourceManager.GetObject("lightbulb", resourceCulture);
+                object obj = ResourceManager.GetObject("incorrect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -219,9 +214,9 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maledoc {
+        internal static System.Drawing.Bitmap lightbulb {
             get {
-                object obj = ResourceManager.GetObject("maledoc", resourceCulture);
+                object obj = ResourceManager.GetObject("lightbulb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

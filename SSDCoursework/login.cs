@@ -68,7 +68,7 @@ namespace SSDCoursework
             thisPlayer.Name = txtName.Text;
             thisPlayer.Password = txtPassword.Text;
 
-            if (createFileFlag == false) //if the binary file already exists
+            if (createFileFlag == false) //if the object already exists
                 Array.Resize(ref players, players.Length + 1); //make the array bigger by one element
             players[players.Length - 1] = thisPlayer; //load this new player into the new element of the array
             Stream sw;
@@ -90,6 +90,14 @@ namespace SSDCoursework
             this.Hide();
             Form listboxQuestions = new listboxQuestions(thisPlayer);
             listboxQuestions.Show();
+
+            //password validation
+            string newPassword = txtPassword.Text;
+            string repeatPassword = txtRepeat.Text;
+            if (!string.IsNullOrEmpty(newPassword) && !string.IsNullOrEmpty(newPassword) && newPassword.Equals(repeatPassword))
+            {
+                MessageBox.Show("Your passwords do not match. Please try again");
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -167,24 +175,23 @@ namespace SSDCoursework
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrEmpty(txtRepeat.Text))
-            //    btnCreate.Enabled = false;
-            //else
-            //    btnCreate.Enabled = true;
+            
         }
 
         private void txtLoginName_TextChanged(object sender, EventArgs e)
         {
-            //if (string.IsNullOrEmpty(txtLoginName.Text) || string.IsNullOrEmpty(txtLoginPassword.Text))
-            //    btnLogin.Enabled = false;
-            //else
-            //    btnLogin.Enabled = true;
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form loginHelp = new loginHelp();
             loginHelp.Show();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

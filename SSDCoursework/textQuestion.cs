@@ -35,7 +35,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBox.Show("Are you sure you want to log out?", "Log out?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -55,46 +55,70 @@ namespace SSDCoursework
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //textbox 1
-            if ((textBox1.Text == "Location") || (textBox1.Text == "location"))
+            if ((textBox1.Text == "location"))
             {
-                img1.Visible = true;
+                imgCorrect1.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect1.Visible = true;
             }
             //textbox 2
-            if ((textBox2.Text == "Injury") || (textBox2.Text == "injury"))
+            if ((textBox2.Text == "injury"))
             {
-                img2.Visible = true;
+                imgCorrect2.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect2.Visible = true;
             }
             //textbox 3
-            if ((textBox3.Text == "Other services") || (textBox3.Text == "other services"))
+            if ((textBox3.Text == "other services"))
             {
-                img3.Visible = true;
+                imgCorrect3.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect3.Visible = true;
             }
             //textbox 4
-            if ((textBox4.Text == "Number injured") || (textBox4.Text == "number injured"))
+            if ((textBox4.Text == "number injured"))
             {
-                img4.Visible = true;
+                imgCorrect4.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect4.Visible = true;
             }
             //textbox 5
-            if ((textBox5.Text == "Extent of injury") || (textBox5.Text == "extent of injury"))
+            if ((textBox5.Text == "extent of injury"))
             {
-                img5.Visible = true;
+                imgCorrect5.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
             }
-            //textbox 6
-            if ((textBox6.Text == "Location repeated") || (textBox6.Text == "location repeated"))
+            else
             {
-                img6.Visible = true;
+                imgIncorrect5.Visible = true;
+            }
+            //textbox 6
+            if ((textBox6.Text == "location repeated"))
+            {
+                imgCorrect6.Visible = true;
                 Score += 1;
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect6.Visible = true;
             }
 
             textBox1.Enabled = false;
@@ -109,8 +133,8 @@ namespace SSDCoursework
         {
             this.Hide();
             thisPlayer.Score = Score;
-            Form multipleChoiceQuestions = new multipleChoiceQuestions(thisPlayer);
-            multipleChoiceQuestions.Show();
+            Form randomizedRadioButtons = new randomizedRadioButtons(thisPlayer);
+            randomizedRadioButtons.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

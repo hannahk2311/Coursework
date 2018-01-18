@@ -53,6 +53,9 @@
             this.imgTick3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.imgIncorrect1 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect2 = new System.Windows.Forms.PictureBox();
+            this.imgIncorrect3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgBurn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAbrasion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContusion)).BeginInit();
@@ -63,6 +66,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgTick1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -254,7 +260,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 52);
             this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close Quiz";
+            this.btnClose.Text = "Log Out";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -294,7 +300,7 @@
             // imgTick1
             // 
             this.imgTick1.Image = ((System.Drawing.Image)(resources.GetObject("imgTick1.Image")));
-            this.imgTick1.Location = new System.Drawing.Point(560, 128);
+            this.imgTick1.Location = new System.Drawing.Point(540, 129);
             this.imgTick1.Name = "imgTick1";
             this.imgTick1.Size = new System.Drawing.Size(54, 50);
             this.imgTick1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +312,7 @@
             // 
             this.imgTick2.BackColor = System.Drawing.Color.Black;
             this.imgTick2.Image = ((System.Drawing.Image)(resources.GetObject("imgTick2.Image")));
-            this.imgTick2.Location = new System.Drawing.Point(560, 258);
+            this.imgTick2.Location = new System.Drawing.Point(540, 259);
             this.imgTick2.Name = "imgTick2";
             this.imgTick2.Size = new System.Drawing.Size(54, 50);
             this.imgTick2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,7 +323,7 @@
             // imgTick3
             // 
             this.imgTick3.Image = ((System.Drawing.Image)(resources.GetObject("imgTick3.Image")));
-            this.imgTick3.Location = new System.Drawing.Point(560, 394);
+            this.imgTick3.Location = new System.Drawing.Point(540, 395);
             this.imgTick3.Name = "imgTick3";
             this.imgTick3.Size = new System.Drawing.Size(54, 50);
             this.imgTick3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -348,6 +354,39 @@
             this.label9.TabIndex = 24;
             this.label9.Text = "Drag and Drop";
             // 
+            // imgIncorrect1
+            // 
+            this.imgIncorrect1.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect1.Location = new System.Drawing.Point(559, 129);
+            this.imgIncorrect1.Name = "imgIncorrect1";
+            this.imgIncorrect1.Size = new System.Drawing.Size(54, 50);
+            this.imgIncorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect1.TabIndex = 25;
+            this.imgIncorrect1.TabStop = false;
+            this.imgIncorrect1.Visible = false;
+            // 
+            // imgIncorrect2
+            // 
+            this.imgIncorrect2.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect2.Location = new System.Drawing.Point(559, 259);
+            this.imgIncorrect2.Name = "imgIncorrect2";
+            this.imgIncorrect2.Size = new System.Drawing.Size(54, 50);
+            this.imgIncorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect2.TabIndex = 26;
+            this.imgIncorrect2.TabStop = false;
+            this.imgIncorrect2.Visible = false;
+            // 
+            // imgIncorrect3
+            // 
+            this.imgIncorrect3.Image = global::SSDCoursework.Properties.Resources.incorrect;
+            this.imgIncorrect3.Location = new System.Drawing.Point(559, 395);
+            this.imgIncorrect3.Name = "imgIncorrect3";
+            this.imgIncorrect3.Size = new System.Drawing.Size(54, 50);
+            this.imgIncorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgIncorrect3.TabIndex = 27;
+            this.imgIncorrect3.TabStop = false;
+            this.imgIncorrect3.Visible = false;
+            // 
             // matchingQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +395,9 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(886, 550);
+            this.Controls.Add(this.imgIncorrect3);
+            this.Controls.Add(this.imgIncorrect2);
+            this.Controls.Add(this.imgIncorrect1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.imgTick3);
@@ -394,6 +436,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgTick1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +470,8 @@
         private System.Windows.Forms.PictureBox imgTick3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox imgIncorrect1;
+        private System.Windows.Forms.PictureBox imgIncorrect2;
+        private System.Windows.Forms.PictureBox imgIncorrect3;
     }
 }

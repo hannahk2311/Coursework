@@ -73,6 +73,10 @@ namespace SSDCoursework
                 MessageBox.Show(Score.ToString());
                 lblScore.Text = Score.ToString();
             }
+            else
+            {
+                imgIncorrect3.Visible = true;
+            }
         }
 
         private void imgBurnAns_DragEnter(object sender, DragEventArgs e)
@@ -105,6 +109,10 @@ namespace SSDCoursework
                 Score += 1;
                 selectedPicture = "";
                 lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect1.Visible = true;
             }
         }
 
@@ -139,6 +147,10 @@ namespace SSDCoursework
                 selectedPicture = "";
                 lblScore.Text = Score.ToString();
             }
+            else
+            {
+                imgIncorrect2.Visible = true;
+            }
         }
 
         private void imgContusionAns_DragEnter(object sender, DragEventArgs e)
@@ -166,7 +178,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+                MessageBox.Show("Are you sure you want to log out?", "Log out?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
