@@ -144,5 +144,10 @@ namespace SSDCoursework
         //    else
         //        btnSubmit.Enabled = true;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

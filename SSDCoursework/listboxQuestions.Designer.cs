@@ -28,25 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listboxQuestions));
             this.lblName = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblHighScore = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNo1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblNo2 = new System.Windows.Forms.Label();
+            this.lblNo3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblNo4 = new System.Windows.Forms.Label();
+            this.lblNo6 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -61,7 +60,7 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lblNo5 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -75,7 +74,7 @@
             this.imgCorrect1 = new System.Windows.Forms.PictureBox();
             this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.imgHelp = new System.Windows.Forms.PictureBox();
             this.imgIncorrect1 = new System.Windows.Forms.PictureBox();
@@ -172,45 +171,45 @@
             this.lblHighScore.TabIndex = 40;
             this.lblHighScore.Text = "0";
             // 
-            // label3
+            // lblQuestion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Green;
-            this.label3.Location = new System.Drawing.Point(13, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(737, 25);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Select the correct answer from each combo box to complete each statement";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.Green;
+            this.lblQuestion.Location = new System.Drawing.Point(13, 70);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(737, 25);
+            this.lblQuestion.TabIndex = 41;
+            this.lblQuestion.Text = "Select the correct answer from each combo box to complete each statement";
+            this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(54, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(471, 20);
             this.label4.TabIndex = 42;
             this.label4.Text = "The main reason for the recovery position is whenever a patient is ";
             // 
-            // label5
+            // lblNo1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(26, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 20);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "1. ";
+            this.lblNo1.AutoSize = true;
+            this.lblNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1.ForeColor = System.Drawing.Color.White;
+            this.lblNo1.Location = new System.Drawing.Point(26, 107);
+            this.lblNo1.Name = "lblNo1";
+            this.lblNo1.Size = new System.Drawing.Size(26, 20);
+            this.lblNo1.TabIndex = 43;
+            this.lblNo1.Text = "1. ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(407, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(167, 20);
@@ -221,40 +220,40 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(54, 169);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(268, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "A person who has fainted will have a ";
             // 
-            // label8
+            // lblNo2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(26, 169);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 20);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "2. ";
+            this.lblNo2.AutoSize = true;
+            this.lblNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2.ForeColor = System.Drawing.Color.White;
+            this.lblNo2.Location = new System.Drawing.Point(26, 169);
+            this.lblNo2.Name = "lblNo2";
+            this.lblNo2.Size = new System.Drawing.Size(26, 20);
+            this.lblNo2.TabIndex = 46;
+            this.lblNo2.Text = "2. ";
             // 
-            // label9
+            // lblNo3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(26, 232);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 20);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "3. ";
+            this.lblNo3.AutoSize = true;
+            this.lblNo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3.ForeColor = System.Drawing.Color.White;
+            this.lblNo3.Location = new System.Drawing.Point(26, 232);
+            this.lblNo3.Name = "lblNo3";
+            this.lblNo3.Size = new System.Drawing.Size(26, 20);
+            this.lblNo3.TabIndex = 47;
+            this.lblNo3.Text = "3. ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(118, 328);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(158, 20);
@@ -265,7 +264,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(54, 232);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(324, 20);
@@ -276,40 +275,40 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(441, 232);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(92, 20);
             this.label12.TabIndex = 50;
             this.label12.Text = " per minute.";
             // 
-            // label13
+            // lblNo4
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(26, 288);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 20);
-            this.label13.TabIndex = 51;
-            this.label13.Text = "4. ";
+            this.lblNo4.AutoSize = true;
+            this.lblNo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo4.ForeColor = System.Drawing.Color.White;
+            this.lblNo4.Location = new System.Drawing.Point(26, 288);
+            this.lblNo4.Name = "lblNo4";
+            this.lblNo4.Size = new System.Drawing.Size(26, 20);
+            this.lblNo4.TabIndex = 51;
+            this.lblNo4.Text = "4. ";
             // 
-            // label14
+            // lblNo6
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(26, 455);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 20);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "6. ";
+            this.lblNo6.AutoSize = true;
+            this.lblNo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo6.ForeColor = System.Drawing.Color.White;
+            this.lblNo6.Location = new System.Drawing.Point(26, 455);
+            this.lblNo6.Name = "lblNo6";
+            this.lblNo6.Size = new System.Drawing.Size(26, 20);
+            this.lblNo6.TabIndex = 52;
+            this.lblNo6.Text = "6. ";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Transparent;
+            this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(53, 384);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(233, 20);
@@ -320,7 +319,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Transparent;
+            this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(54, 455);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(393, 20);
@@ -331,7 +330,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Transparent;
+            this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(475, 293);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(160, 20);
@@ -343,7 +342,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Black;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Transparent;
+            this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(665, 169);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 20);
@@ -354,7 +353,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Transparent;
+            this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(50, 487);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(168, 20);
@@ -363,7 +362,10 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.ForeColor = System.Drawing.Color.Black;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(417, 290);
             this.comboBox5.Name = "comboBox5";
@@ -372,7 +374,10 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(531, 107);
             this.comboBox1.Name = "comboBox1";
@@ -382,7 +387,10 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(574, 168);
             this.comboBox3.Name = "comboBox3";
@@ -391,7 +399,10 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(320, 168);
             this.comboBox2.Name = "comboBox2";
@@ -400,7 +411,10 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(378, 232);
             this.comboBox4.Name = "comboBox4";
@@ -409,7 +423,10 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.ForeColor = System.Drawing.Color.Black;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(58, 328);
             this.comboBox6.Name = "comboBox6";
@@ -418,7 +435,10 @@
             // 
             // comboBox7
             // 
+            this.comboBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.ForeColor = System.Drawing.Color.Black;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(285, 384);
             this.comboBox7.Name = "comboBox7";
@@ -427,7 +447,10 @@
             // 
             // comboBox8
             // 
+            this.comboBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.ForeColor = System.Drawing.Color.Black;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(447, 455);
             this.comboBox8.Name = "comboBox8";
@@ -438,23 +461,23 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Transparent;
+            this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(54, 293);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(361, 20);
             this.label22.TabIndex = 66;
             this.label22.Text = "If a First Aider wishes to do so, they may carry out ";
             // 
-            // label23
+            // lblNo5
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Transparent;
-            this.label23.Location = new System.Drawing.Point(25, 384);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(26, 20);
-            this.label23.TabIndex = 67;
-            this.label23.Text = "5. ";
+            this.lblNo5.AutoSize = true;
+            this.lblNo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo5.ForeColor = System.Drawing.Color.White;
+            this.lblNo5.Location = new System.Drawing.Point(25, 384);
+            this.lblNo5.Name = "lblNo5";
+            this.lblNo5.Size = new System.Drawing.Size(26, 20);
+            this.lblNo5.TabIndex = 67;
+            this.lblNo5.Text = "5. ";
             // 
             // btnSubmit
             // 
@@ -500,7 +523,7 @@
             // 
             // imgCorrect8
             // 
-            this.imgCorrect8.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect8.Image")));
+            this.imgCorrect8.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect8.Location = new System.Drawing.Point(756, 454);
             this.imgCorrect8.Name = "imgCorrect8";
             this.imgCorrect8.Size = new System.Drawing.Size(30, 40);
@@ -511,7 +534,7 @@
             // 
             // imgCorrect7
             // 
-            this.imgCorrect7.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect7.Image")));
+            this.imgCorrect7.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect7.Location = new System.Drawing.Point(756, 381);
             this.imgCorrect7.Name = "imgCorrect7";
             this.imgCorrect7.Size = new System.Drawing.Size(30, 40);
@@ -522,7 +545,7 @@
             // 
             // imgCorrect6
             // 
-            this.imgCorrect6.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect6.Image")));
+            this.imgCorrect6.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect6.Location = new System.Drawing.Point(756, 328);
             this.imgCorrect6.Name = "imgCorrect6";
             this.imgCorrect6.Size = new System.Drawing.Size(30, 40);
@@ -533,7 +556,7 @@
             // 
             // imgCorrect5
             // 
-            this.imgCorrect5.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect5.Image")));
+            this.imgCorrect5.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect5.Location = new System.Drawing.Point(756, 279);
             this.imgCorrect5.Name = "imgCorrect5";
             this.imgCorrect5.Size = new System.Drawing.Size(30, 40);
@@ -544,7 +567,7 @@
             // 
             // imgCorrect3
             // 
-            this.imgCorrect3.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect3.Image")));
+            this.imgCorrect3.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect3.Location = new System.Drawing.Point(756, 222);
             this.imgCorrect3.Name = "imgCorrect3";
             this.imgCorrect3.Size = new System.Drawing.Size(30, 40);
@@ -555,7 +578,7 @@
             // 
             // imgCorrect4
             // 
-            this.imgCorrect4.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect4.Image")));
+            this.imgCorrect4.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect4.Location = new System.Drawing.Point(805, 224);
             this.imgCorrect4.Name = "imgCorrect4";
             this.imgCorrect4.Size = new System.Drawing.Size(30, 40);
@@ -566,7 +589,7 @@
             // 
             // imgCorrect2
             // 
-            this.imgCorrect2.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect2.Image")));
+            this.imgCorrect2.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect2.Location = new System.Drawing.Point(756, 159);
             this.imgCorrect2.Name = "imgCorrect2";
             this.imgCorrect2.Size = new System.Drawing.Size(30, 40);
@@ -577,7 +600,7 @@
             // 
             // imgCorrect1
             // 
-            this.imgCorrect1.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect1.Image")));
+            this.imgCorrect1.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect1.Location = new System.Drawing.Point(756, 102);
             this.imgCorrect1.Name = "imgCorrect1";
             this.imgCorrect1.Size = new System.Drawing.Size(30, 40);
@@ -606,17 +629,17 @@
             this.label2.TabIndex = 79;
             this.label2.Text = "Player Details: ";
             // 
-            // label24
+            // lblTitle
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial Black", 27.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Arial Black", 27.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label24.Location = new System.Drawing.Point(21, 18);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(287, 52);
-            this.label24.TabIndex = 80;
-            this.label24.Text = "Combo Box\'s";
+            this.lblTitle.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lblTitle.Location = new System.Drawing.Point(21, 18);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(287, 52);
+            this.lblTitle.TabIndex = 80;
+            this.lblTitle.Text = "Combo Box\'s";
             // 
             // label25
             // 
@@ -736,6 +759,7 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1066, 574);
+            this.ControlBox = false;
             this.Controls.Add(this.imgIncorrect8);
             this.Controls.Add(this.imgIncorrect7);
             this.Controls.Add(this.imgIncorrect6);
@@ -746,7 +770,7 @@
             this.Controls.Add(this.imgIncorrect1);
             this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.imgCorrect8);
             this.Controls.Add(this.imgCorrect7);
@@ -759,7 +783,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.lblNo5);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.comboBox8);
             this.Controls.Add(this.comboBox7);
@@ -774,18 +798,18 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lblNo6);
+            this.Controls.Add(this.lblNo4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblNo3);
+            this.Controls.Add(this.lblNo2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblNo1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblName);
@@ -794,9 +818,12 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label15);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "listboxQuestions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListBoxQuestions";
+            this.Text = "ListBox";
             this.Load += new System.EventHandler(this.listboxQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect7)).EndInit();
@@ -830,18 +857,18 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblHighScore;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNo1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblNo2;
+        private System.Windows.Forms.Label lblNo3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblNo4;
+        private System.Windows.Forms.Label lblNo6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -856,7 +883,7 @@
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblNo5;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnClose;
@@ -869,7 +896,7 @@
         private System.Windows.Forms.PictureBox imgCorrect7;
         private System.Windows.Forms.PictureBox imgCorrect8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox imgHelp;
         private System.Windows.Forms.PictureBox imgIncorrect1;

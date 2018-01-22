@@ -472,6 +472,7 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(915, 574);
+            this.ControlBox = false;
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
@@ -493,7 +494,11 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNext);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "multipleChoiceQuestions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "multipleChoiceQuestions";
             this.Load += new System.EventHandler(this.multipleChoiceQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();

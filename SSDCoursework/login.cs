@@ -183,7 +183,7 @@ namespace SSDCoursework
             
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void imgHelp_Click(object sender, EventArgs e)
         {
             Form loginHelp = new loginHelp();
             loginHelp.Show();

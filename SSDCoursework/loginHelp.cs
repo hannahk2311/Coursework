@@ -22,7 +22,7 @@ namespace SSDCoursework
             richTextBoxHelp.Text = Properties.Resources.helpLogin;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnReturn_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =

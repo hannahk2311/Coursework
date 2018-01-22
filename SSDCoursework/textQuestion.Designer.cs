@@ -28,29 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(textQuestion));
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblNo1 = new System.Windows.Forms.Label();
+            this.lblNo2 = new System.Windows.Forms.Label();
+            this.lblNo3 = new System.Windows.Forms.Label();
+            this.lblNo4 = new System.Windows.Forms.Label();
+            this.lblNo5 = new System.Windows.Forms.Label();
+            this.lblNo6 = new System.Windows.Forms.Label();
+            this.lblHint2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.lblHighScore = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHint1 = new System.Windows.Forms.Label();
             this.imgCorrect1 = new System.Windows.Forms.PictureBox();
             this.imgCorrect5 = new System.Windows.Forms.PictureBox();
             this.imgCorrect4 = new System.Windows.Forms.PictureBox();
             this.imgCorrect6 = new System.Windows.Forms.PictureBox();
             this.imgCorrect2 = new System.Windows.Forms.PictureBox();
             this.imgCorrect3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.imgLightBulb = new System.Windows.Forms.PictureBox();
             this.imgAvatar3 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -75,7 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLightBulb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).BeginInit();
@@ -97,86 +96,87 @@
             this.label3.Text = "When calling for an ambulance, what are the six things you must remember to tell " +
     "the reciever?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lblNo1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(30, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "1. ";
+            this.lblNo1.AutoSize = true;
+            this.lblNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1.ForeColor = System.Drawing.Color.White;
+            this.lblNo1.Location = new System.Drawing.Point(30, 88);
+            this.lblNo1.Name = "lblNo1";
+            this.lblNo1.Size = new System.Drawing.Size(36, 25);
+            this.lblNo1.TabIndex = 3;
+            this.lblNo1.Text = "1. ";
             // 
-            // label5
+            // lblNo2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(30, 141);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "2. ";
+            this.lblNo2.AutoSize = true;
+            this.lblNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2.ForeColor = System.Drawing.Color.White;
+            this.lblNo2.Location = new System.Drawing.Point(30, 141);
+            this.lblNo2.Name = "lblNo2";
+            this.lblNo2.Size = new System.Drawing.Size(36, 25);
+            this.lblNo2.TabIndex = 4;
+            this.lblNo2.Text = "2. ";
             // 
-            // label6
+            // lblNo3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(30, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 25);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "3. ";
+            this.lblNo3.AutoSize = true;
+            this.lblNo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3.ForeColor = System.Drawing.Color.White;
+            this.lblNo3.Location = new System.Drawing.Point(30, 196);
+            this.lblNo3.Name = "lblNo3";
+            this.lblNo3.Size = new System.Drawing.Size(36, 25);
+            this.lblNo3.TabIndex = 5;
+            this.lblNo3.Text = "3. ";
             // 
-            // label7
+            // lblNo4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(30, 249);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 25);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "4. ";
+            this.lblNo4.AutoSize = true;
+            this.lblNo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo4.ForeColor = System.Drawing.Color.White;
+            this.lblNo4.Location = new System.Drawing.Point(30, 249);
+            this.lblNo4.Name = "lblNo4";
+            this.lblNo4.Size = new System.Drawing.Size(36, 25);
+            this.lblNo4.TabIndex = 6;
+            this.lblNo4.Text = "4. ";
             // 
-            // label8
+            // lblNo5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(30, 301);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 25);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "5. ";
+            this.lblNo5.AutoSize = true;
+            this.lblNo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo5.ForeColor = System.Drawing.Color.White;
+            this.lblNo5.Location = new System.Drawing.Point(30, 301);
+            this.lblNo5.Name = "lblNo5";
+            this.lblNo5.Size = new System.Drawing.Size(36, 25);
+            this.lblNo5.TabIndex = 7;
+            this.lblNo5.Text = "5. ";
             // 
-            // label9
+            // lblNo6
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(30, 357);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 25);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "6. ";
+            this.lblNo6.AutoSize = true;
+            this.lblNo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo6.ForeColor = System.Drawing.Color.White;
+            this.lblNo6.Location = new System.Drawing.Point(30, 357);
+            this.lblNo6.Name = "lblNo6";
+            this.lblNo6.Size = new System.Drawing.Size(36, 25);
+            this.lblNo6.TabIndex = 8;
+            this.lblNo6.Text = "6. ";
             // 
-            // label10
+            // lblHint2
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(378, 223);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(216, 120);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "It also spells out the \r\nname of a famous singer\r\n when written in\r\nacrostics wit" +
+            this.lblHint2.AutoSize = true;
+            this.lblHint2.BackColor = System.Drawing.Color.Transparent;
+            this.lblHint2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHint2.ForeColor = System.Drawing.Color.White;
+            this.lblHint2.Location = new System.Drawing.Point(378, 223);
+            this.lblHint2.Name = "lblHint2";
+            this.lblHint2.Size = new System.Drawing.Size(216, 120);
+            this.lblHint2.TabIndex = 9;
+            this.lblHint2.Text = "It also spells out the \r\nname of a famous singer\r\n when written in\r\nacrostics wit" +
     "h the\r\nsurname Ritchie...";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHint2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -244,21 +244,21 @@
             this.lblHighScore.TabIndex = 15;
             this.lblHighScore.Text = "0";
             // 
-            // label1
+            // lblHint1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(456, 199);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 24);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "HINT: ";
+            this.lblHint1.AutoSize = true;
+            this.lblHint1.BackColor = System.Drawing.Color.Transparent;
+            this.lblHint1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHint1.ForeColor = System.Drawing.Color.White;
+            this.lblHint1.Location = new System.Drawing.Point(456, 199);
+            this.lblHint1.Name = "lblHint1";
+            this.lblHint1.Size = new System.Drawing.Size(64, 24);
+            this.lblHint1.TabIndex = 16;
+            this.lblHint1.Text = "HINT: ";
             // 
             // imgCorrect1
             // 
-            this.imgCorrect1.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect1.Image")));
+            this.imgCorrect1.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect1.Location = new System.Drawing.Point(306, 81);
             this.imgCorrect1.Name = "imgCorrect1";
             this.imgCorrect1.Size = new System.Drawing.Size(42, 42);
@@ -269,7 +269,7 @@
             // 
             // imgCorrect5
             // 
-            this.imgCorrect5.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect5.Image")));
+            this.imgCorrect5.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect5.Location = new System.Drawing.Point(306, 294);
             this.imgCorrect5.Name = "imgCorrect5";
             this.imgCorrect5.Size = new System.Drawing.Size(42, 42);
@@ -280,7 +280,7 @@
             // 
             // imgCorrect4
             // 
-            this.imgCorrect4.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect4.Image")));
+            this.imgCorrect4.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect4.Location = new System.Drawing.Point(306, 242);
             this.imgCorrect4.Name = "imgCorrect4";
             this.imgCorrect4.Size = new System.Drawing.Size(42, 42);
@@ -291,7 +291,7 @@
             // 
             // imgCorrect6
             // 
-            this.imgCorrect6.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect6.Image")));
+            this.imgCorrect6.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect6.Location = new System.Drawing.Point(306, 350);
             this.imgCorrect6.Name = "imgCorrect6";
             this.imgCorrect6.Size = new System.Drawing.Size(42, 42);
@@ -302,7 +302,7 @@
             // 
             // imgCorrect2
             // 
-            this.imgCorrect2.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect2.Image")));
+            this.imgCorrect2.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect2.Location = new System.Drawing.Point(306, 134);
             this.imgCorrect2.Name = "imgCorrect2";
             this.imgCorrect2.Size = new System.Drawing.Size(42, 42);
@@ -313,7 +313,7 @@
             // 
             // imgCorrect3
             // 
-            this.imgCorrect3.Image = ((System.Drawing.Image)(resources.GetObject("imgCorrect3.Image")));
+            this.imgCorrect3.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgCorrect3.Location = new System.Drawing.Point(306, 185);
             this.imgCorrect3.Name = "imgCorrect3";
             this.imgCorrect3.Size = new System.Drawing.Size(42, 42);
@@ -322,16 +322,16 @@
             this.imgCorrect3.TabStop = false;
             this.imgCorrect3.Visible = false;
             // 
-            // pictureBox7
+            // imgLightBulb
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(423, 97);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(105, 99);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 23;
-            this.pictureBox7.TabStop = false;
+            this.imgLightBulb.BackColor = System.Drawing.Color.White;
+            this.imgLightBulb.Image = global::SSDCoursework.Properties.Resources.lightbulb;
+            this.imgLightBulb.Location = new System.Drawing.Point(423, 97);
+            this.imgLightBulb.Name = "imgLightBulb";
+            this.imgLightBulb.Size = new System.Drawing.Size(105, 99);
+            this.imgLightBulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLightBulb.TabIndex = 23;
+            this.imgLightBulb.TabStop = false;
             // 
             // imgAvatar3
             // 
@@ -345,50 +345,56 @@
             // textBox1
             // 
             this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(72, 91);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 20);
+            this.textBox1.Size = new System.Drawing.Size(228, 26);
             this.textBox1.TabIndex = 25;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(72, 144);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(228, 20);
+            this.textBox2.Size = new System.Drawing.Size(228, 26);
             this.textBox2.TabIndex = 26;
             // 
             // textBox3
             // 
             this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(72, 199);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(228, 20);
+            this.textBox3.Size = new System.Drawing.Size(228, 26);
             this.textBox3.TabIndex = 27;
             // 
             // textBox4
             // 
             this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(72, 252);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(228, 20);
+            this.textBox4.Size = new System.Drawing.Size(228, 26);
             this.textBox4.TabIndex = 28;
             // 
             // textBox5
             // 
             this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(72, 304);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(228, 20);
+            this.textBox5.Size = new System.Drawing.Size(228, 26);
             this.textBox5.TabIndex = 29;
             // 
             // textBox6
             // 
             this.textBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(72, 360);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(228, 20);
+            this.textBox6.Size = new System.Drawing.Size(228, 26);
             this.textBox6.TabIndex = 30;
             // 
             // btnSubmit
@@ -530,6 +536,7 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(859, 490);
+            this.ControlBox = false;
             this.Controls.Add(this.imgIncorrect6);
             this.Controls.Add(this.imgIncorrect5);
             this.Controls.Add(this.imgIncorrect4);
@@ -548,30 +555,34 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.imgAvatar3);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.imgLightBulb);
             this.Controls.Add(this.imgCorrect3);
             this.Controls.Add(this.imgCorrect2);
             this.Controls.Add(this.imgCorrect6);
             this.Controls.Add(this.imgCorrect4);
             this.Controls.Add(this.imgCorrect5);
             this.Controls.Add(this.imgCorrect1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHint1);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblHint2);
+            this.Controls.Add(this.lblNo6);
+            this.Controls.Add(this.lblNo5);
+            this.Controls.Add(this.lblNo4);
+            this.Controls.Add(this.lblNo3);
+            this.Controls.Add(this.lblNo2);
+            this.Controls.Add(this.lblNo1);
             this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "textQuestion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "textQuestion";
             this.Load += new System.EventHandler(this.textQuestion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).EndInit();
@@ -580,7 +591,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLightBulb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).EndInit();
@@ -596,27 +607,27 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblNo1;
+        private System.Windows.Forms.Label lblNo2;
+        private System.Windows.Forms.Label lblNo3;
+        private System.Windows.Forms.Label lblNo4;
+        private System.Windows.Forms.Label lblNo5;
+        private System.Windows.Forms.Label lblNo6;
+        private System.Windows.Forms.Label lblHint2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblHighScore;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHint1;
         private System.Windows.Forms.PictureBox imgCorrect1;
         private System.Windows.Forms.PictureBox imgCorrect5;
         private System.Windows.Forms.PictureBox imgCorrect4;
         private System.Windows.Forms.PictureBox imgCorrect6;
         private System.Windows.Forms.PictureBox imgCorrect2;
         private System.Windows.Forms.PictureBox imgCorrect3;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox imgLightBulb;
         private System.Windows.Forms.PictureBox imgAvatar3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

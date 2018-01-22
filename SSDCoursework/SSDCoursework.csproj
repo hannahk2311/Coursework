@@ -44,12 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="help.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="help.Designer.cs">
-      <DependentUpon>help.cs</DependentUpon>
-    </Compile>
     <Compile Include="listboxQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +67,12 @@
     </Compile>
     <Compile Include="matchingQuestions.Designer.cs">
       <DependentUpon>matchingQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matchingQuestionsHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matchingQuestionsHelp.Designer.cs">
+      <DependentUpon>matchingQuestionsHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -113,9 +113,6 @@
     <Compile Include="textQuestion.Designer.cs">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="help.resx">
-      <DependentUpon>help.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="matchingQuestions.resx">
       <DependentUpon>matchingQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matchingQuestionsHelp.resx">
+      <DependentUpon>matchingQuestionsHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -163,6 +163,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\incorrect.png" />
+    <None Include="images\textbox PS.png" />
+    <None Include="images\combo box PS.png" />
+    <None Include="images\login PS.png" />
+    <None Include="images\matching pictures PS.png" />
     <Content Include="rdbQuestions.txt" />
     <None Include="Resources\045-ambulance.png" />
     <None Include="Resources\037-first-aid-kit.png" />

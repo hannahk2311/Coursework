@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgTitle = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnLeaderboard = new System.Windows.Forms.Button();
@@ -40,21 +40,21 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblHighScore = new System.Windows.Forms.Label();
             this.btnQuit = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // imgTitle
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SSDCoursework.Properties.Resources.title;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(507, 90);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgTitle.BackColor = System.Drawing.Color.Transparent;
+            this.imgTitle.Image = global::SSDCoursework.Properties.Resources.title;
+            this.imgTitle.Location = new System.Drawing.Point(12, 12);
+            this.imgTitle.Name = "imgTitle";
+            this.imgTitle.Size = new System.Drawing.Size(507, 90);
+            this.imgTitle.TabIndex = 0;
+            this.imgTitle.TabStop = false;
             // 
             // btnStart
             // 
@@ -184,15 +184,15 @@
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // imgLogo
             // 
-            this.pictureBox3.Image = global::SSDCoursework.Properties.Resources.first_aid_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(697, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(238, 192);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.imgLogo.Image = global::SSDCoursework.Properties.Resources.first_aid_logo;
+            this.imgLogo.Location = new System.Drawing.Point(697, 12);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Size = new System.Drawing.Size(238, 192);
+            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogo.TabIndex = 14;
+            this.imgLogo.TabStop = false;
             // 
             // Menu
             // 
@@ -202,7 +202,8 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(947, 564);
-            this.Controls.Add(this.pictureBox3);
+            this.ControlBox = false;
+            this.Controls.Add(this.imgLogo);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.lblName);
@@ -214,13 +215,17 @@
             this.Controls.Add(this.btnLeaderboard);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgTitle);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,7 +233,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgTitle;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnLeaderboard;
@@ -240,6 +245,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblHighScore;
         private System.Windows.Forms.Button btnQuit;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox imgLogo;
     }
 }

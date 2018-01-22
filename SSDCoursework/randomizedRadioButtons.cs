@@ -17,6 +17,7 @@ namespace SSDCoursework
         Questions[] arrayList = new Questions[3];
         int[] dummyArray = new int[3] { -1, -1, -1 };
         public int Score;
+
         public randomizedRadioButtons(Player ThisPlayer)
         {
             InitializeComponent();
@@ -31,10 +32,21 @@ namespace SSDCoursework
 
         private void btnOpenQuestion_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnOpenQuestion_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void randomizedRadioButtons_Load(object sender, EventArgs e)
+        {
             try
             {
                 int arrayLength = 0;
-                string file_name = "F:\\Computing\\16-01-18 SSDCoursework\\SSDCoursework";
+                //string file_name = "D:\\Computing\\18-01-18 SSDCoursework\\SSDCoursework";
+                string file_name = "D:\\Computing\\18-01-18 SSDCoursework\\SSDCoursework\\rdbQuestions.txt";
 
                 System.IO.StreamReader objReader;
                 objReader = new System.IO.StreamReader(file_name);

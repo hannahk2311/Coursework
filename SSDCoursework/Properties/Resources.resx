@@ -172,4 +172,16 @@
   <data name="incorrect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\incorrect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="combo_box_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\combo box PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\login PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textbox_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\textbox PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="matching_pictures_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\matching pictures PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

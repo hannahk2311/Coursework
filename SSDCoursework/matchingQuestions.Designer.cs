@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(matchingQuestions));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,9 +44,9 @@
             this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblNo1 = new System.Windows.Forms.Label();
+            this.lblNo2 = new System.Windows.Forms.Label();
+            this.lblNo3 = new System.Windows.Forms.Label();
             this.imgTick1 = new System.Windows.Forms.PictureBox();
             this.imgTick2 = new System.Windows.Forms.PictureBox();
             this.imgTick3 = new System.Windows.Forms.PictureBox();
@@ -151,7 +150,7 @@
             // imgBurn
             // 
             this.imgBurn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgBurn.Image = ((System.Drawing.Image)(resources.GetObject("imgBurn.Image")));
+            this.imgBurn.Image = global::SSDCoursework.Properties.Resources.burn_wound;
             this.imgBurn.Location = new System.Drawing.Point(73, 87);
             this.imgBurn.Name = "imgBurn";
             this.imgBurn.Size = new System.Drawing.Size(150, 124);
@@ -165,7 +164,7 @@
             // imgAbrasion
             // 
             this.imgAbrasion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgAbrasion.Image = ((System.Drawing.Image)(resources.GetObject("imgAbrasion.Image")));
+            this.imgAbrasion.Image = global::SSDCoursework.Properties.Resources.abrasion_wound;
             this.imgAbrasion.Location = new System.Drawing.Point(73, 226);
             this.imgAbrasion.Name = "imgAbrasion";
             this.imgAbrasion.Size = new System.Drawing.Size(150, 121);
@@ -178,7 +177,7 @@
             // imgContusion
             // 
             this.imgContusion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgContusion.Image = ((System.Drawing.Image)(resources.GetObject("imgContusion.Image")));
+            this.imgContusion.Image = global::SSDCoursework.Properties.Resources.contusion_wound;
             this.imgContusion.Location = new System.Drawing.Point(73, 364);
             this.imgContusion.Name = "imgContusion";
             this.imgContusion.Size = new System.Drawing.Size(150, 112);
@@ -190,7 +189,7 @@
             // 
             // imgAbrasionAns
             // 
-            this.imgAbrasionAns.Image = ((System.Drawing.Image)(resources.GetObject("imgAbrasionAns.Image")));
+            this.imgAbrasionAns.Image = global::SSDCoursework.Properties.Resources.ABRASION;
             this.imgAbrasionAns.Location = new System.Drawing.Point(347, 106);
             this.imgAbrasionAns.Name = "imgAbrasionAns";
             this.imgAbrasionAns.Size = new System.Drawing.Size(178, 91);
@@ -203,7 +202,7 @@
             // 
             // imgContusionAns
             // 
-            this.imgContusionAns.Image = ((System.Drawing.Image)(resources.GetObject("imgContusionAns.Image")));
+            this.imgContusionAns.Image = global::SSDCoursework.Properties.Resources.CONTUSION;
             this.imgContusionAns.Location = new System.Drawing.Point(347, 241);
             this.imgContusionAns.Name = "imgContusionAns";
             this.imgContusionAns.Size = new System.Drawing.Size(178, 91);
@@ -216,7 +215,7 @@
             // 
             // imgBurnAns
             // 
-            this.imgBurnAns.Image = ((System.Drawing.Image)(resources.GetObject("imgBurnAns.Image")));
+            this.imgBurnAns.Image = global::SSDCoursework.Properties.Resources.BURN;
             this.imgBurnAns.Location = new System.Drawing.Point(376, 373);
             this.imgBurnAns.Name = "imgBurnAns";
             this.imgBurnAns.Size = new System.Drawing.Size(100, 88);
@@ -264,42 +263,42 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label5
+            // lblNo1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(38, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 20);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "1. ";
+            this.lblNo1.AutoSize = true;
+            this.lblNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1.ForeColor = System.Drawing.Color.White;
+            this.lblNo1.Location = new System.Drawing.Point(38, 138);
+            this.lblNo1.Name = "lblNo1";
+            this.lblNo1.Size = new System.Drawing.Size(29, 20);
+            this.lblNo1.TabIndex = 17;
+            this.lblNo1.Text = "1. ";
             // 
-            // label6
+            // lblNo2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(38, 268);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 20);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "2. ";
+            this.lblNo2.AutoSize = true;
+            this.lblNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2.ForeColor = System.Drawing.Color.White;
+            this.lblNo2.Location = new System.Drawing.Point(38, 268);
+            this.lblNo2.Name = "lblNo2";
+            this.lblNo2.Size = new System.Drawing.Size(29, 20);
+            this.lblNo2.TabIndex = 18;
+            this.lblNo2.Text = "2. ";
             // 
-            // label7
+            // lblNo3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(38, 404);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 20);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "3. ";
+            this.lblNo3.AutoSize = true;
+            this.lblNo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3.ForeColor = System.Drawing.Color.White;
+            this.lblNo3.Location = new System.Drawing.Point(38, 404);
+            this.lblNo3.Name = "lblNo3";
+            this.lblNo3.Size = new System.Drawing.Size(29, 20);
+            this.lblNo3.TabIndex = 19;
+            this.lblNo3.Text = "3. ";
             // 
             // imgTick1
             // 
-            this.imgTick1.Image = ((System.Drawing.Image)(resources.GetObject("imgTick1.Image")));
+            this.imgTick1.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgTick1.Location = new System.Drawing.Point(540, 129);
             this.imgTick1.Name = "imgTick1";
             this.imgTick1.Size = new System.Drawing.Size(54, 50);
@@ -311,7 +310,7 @@
             // imgTick2
             // 
             this.imgTick2.BackColor = System.Drawing.Color.Black;
-            this.imgTick2.Image = ((System.Drawing.Image)(resources.GetObject("imgTick2.Image")));
+            this.imgTick2.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgTick2.Location = new System.Drawing.Point(540, 259);
             this.imgTick2.Name = "imgTick2";
             this.imgTick2.Size = new System.Drawing.Size(54, 50);
@@ -322,7 +321,7 @@
             // 
             // imgTick3
             // 
-            this.imgTick3.Image = ((System.Drawing.Image)(resources.GetObject("imgTick3.Image")));
+            this.imgTick3.Image = global::SSDCoursework.Properties.Resources.tick;
             this.imgTick3.Location = new System.Drawing.Point(540, 395);
             this.imgTick3.Name = "imgTick3";
             this.imgTick3.Size = new System.Drawing.Size(54, 50);
@@ -395,6 +394,7 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(886, 550);
+            this.ControlBox = false;
             this.Controls.Add(this.imgIncorrect3);
             this.Controls.Add(this.imgIncorrect2);
             this.Controls.Add(this.imgIncorrect1);
@@ -403,9 +403,9 @@
             this.Controls.Add(this.imgTick3);
             this.Controls.Add(this.imgTick2);
             this.Controls.Add(this.imgTick1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblNo3);
+            this.Controls.Add(this.lblNo2);
+            this.Controls.Add(this.lblNo1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.imgAvatar);
@@ -423,7 +423,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "matchingQuestions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "matchingQuestions";
             this.Load += new System.EventHandler(this.matchingQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgBurn)).EndInit();
@@ -462,9 +466,9 @@
         private System.Windows.Forms.PictureBox imgAvatar;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNo1;
+        private System.Windows.Forms.Label lblNo2;
+        private System.Windows.Forms.Label lblNo3;
         private System.Windows.Forms.PictureBox imgTick1;
         private System.Windows.Forms.PictureBox imgTick2;
         private System.Windows.Forms.PictureBox imgTick3;

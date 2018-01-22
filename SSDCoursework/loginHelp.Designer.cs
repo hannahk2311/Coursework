@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.richTextBoxHelp = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnReturn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(263, 443);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 51);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Return";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReturn.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReturn.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
+            this.btnReturn.Location = new System.Drawing.Point(263, 443);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(137, 51);
+            this.btnReturn.TabIndex = 0;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label1.Location = new System.Drawing.Point(225, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 57);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Help Form";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTitle.Location = new System.Drawing.Point(225, 1);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(219, 57);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "Help Form";
             // 
             // richTextBoxHelp
             // 
@@ -76,8 +76,9 @@
             this.ClientSize = new System.Drawing.Size(684, 506);
             this.ControlBox = false;
             this.Controls.Add(this.richTextBoxHelp);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.btnReturn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "loginHelp";
@@ -91,8 +92,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.RichTextBox richTextBoxHelp;
     }
 }
