@@ -26,7 +26,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure?", "Return to Login Form",
+                MessageBox.Show("Are you sure you want to leave this form?", "Return to Login Form",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))

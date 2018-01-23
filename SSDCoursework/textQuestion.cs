@@ -149,5 +149,24 @@ namespace SSDCoursework
         {
 
         }
+
+        private void imgLightBulb_Click(object sender, EventArgs e)
+        {
+            //forgiveness
+            DialogResult result =
+                MessageBox.Show("Are you sure you want to see the hint", "Show Hint?",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.OK))
+            {
+                lblHint1.Visible = true;
+                lblHint2.Visible = true;
+                imgLightBulb.Enabled = false;
+            }
+            else
+            {
+                //Do Nothing
+            }
+        }
     }
 }

@@ -177,6 +177,7 @@
             this.lblHint2.Text = "It also spells out the \r\nname of a famous singer\r\n when written in\r\nacrostics wit" +
     "h the\r\nsurname Ritchie...";
             this.lblHint2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHint2.Visible = false;
             // 
             // label11
             // 
@@ -255,6 +256,7 @@
             this.lblHint1.Size = new System.Drawing.Size(64, 24);
             this.lblHint1.TabIndex = 16;
             this.lblHint1.Text = "HINT: ";
+            this.lblHint1.Visible = false;
             // 
             // imgCorrect1
             // 
@@ -325,6 +327,7 @@
             // imgLightBulb
             // 
             this.imgLightBulb.BackColor = System.Drawing.Color.White;
+            this.imgLightBulb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgLightBulb.Image = global::SSDCoursework.Properties.Resources.lightbulb;
             this.imgLightBulb.Location = new System.Drawing.Point(423, 97);
             this.imgLightBulb.Name = "imgLightBulb";
@@ -332,6 +335,7 @@
             this.imgLightBulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLightBulb.TabIndex = 23;
             this.imgLightBulb.TabStop = false;
+            this.imgLightBulb.Click += new System.EventHandler(this.imgLightBulb_Click);
             // 
             // imgAvatar3
             // 

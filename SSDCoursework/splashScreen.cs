@@ -18,29 +18,6 @@ namespace SSDCoursework
 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void splashScreen_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-        
-        
-        
-        
-        
-        
-        
         //Use timer class
         Timer tmr;
 
@@ -77,6 +54,21 @@ namespace SSDCoursework
             //hide this form
 
             this.Hide();
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void splashScreen_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

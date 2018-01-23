@@ -70,7 +70,6 @@ namespace SSDCoursework
                 imgTick3.Visible = true;
                 Score += 1;
                 selectedPicture = "";
-                MessageBox.Show(Score.ToString());
                 lblScore.Text = Score.ToString();
             }
             else

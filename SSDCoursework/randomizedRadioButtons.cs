@@ -45,7 +45,6 @@ namespace SSDCoursework
             try
             {
                 int arrayLength = 0;
-                //string file_name = "D:\\Computing\\18-01-18 SSDCoursework\\SSDCoursework";
                 string file_name = "D:\\Computing\\18-01-18 SSDCoursework\\SSDCoursework\\rdbQuestions.txt";
 
                 System.IO.StreamReader objReader;

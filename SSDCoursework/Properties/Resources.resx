@@ -184,4 +184,22 @@
   <data name="matching_pictures_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\matching pictures PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bandage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\bandage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oxygen_mask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\oxygen mask.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\sling.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broken_arm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\broken arm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open_wound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\open wound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trouble_breathing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\trouble breathing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

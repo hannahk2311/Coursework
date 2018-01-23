@@ -50,6 +50,12 @@
     <Compile Include="listboxQuestions.Designer.cs">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </Compile>
+    <Compile Include="listBoxQuestionsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listBoxQuestionsEasy.Designer.cs">
+      <DependentUpon>listBoxQuestionsEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,12 @@
     <Compile Include="matchingQuestions.Designer.cs">
       <DependentUpon>matchingQuestions.cs</DependentUpon>
     </Compile>
+    <Compile Include="matchingQuestionsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matchingQuestionsEasy.Designer.cs">
+      <DependentUpon>matchingQuestionsEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="matchingQuestionsHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </Compile>
     <Compile Include="multipleChoiceQuestions.Designer.cs">
       <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multipleChoiceQuestionsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multipleChoiceQuestionsEasy.Designer.cs">
+      <DependentUpon>multipleChoiceQuestionsEasy.cs</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -113,8 +131,17 @@
     <Compile Include="textQuestion.Designer.cs">
       <DependentUpon>textQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="textQuestionEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="textQuestionEasy.Designer.cs">
+      <DependentUpon>textQuestionEasy.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listBoxQuestionsEasy.resx">
+      <DependentUpon>listBoxQuestionsEasy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -125,6 +152,9 @@
     <EmbeddedResource Include="matchingQuestions.resx">
       <DependentUpon>matchingQuestions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="matchingQuestionsEasy.resx">
+      <DependentUpon>matchingQuestionsEasy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="matchingQuestionsHelp.resx">
       <DependentUpon>matchingQuestionsHelp.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="multipleChoiceQuestions.resx">
       <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multipleChoiceQuestionsEasy.resx">
+      <DependentUpon>multipleChoiceQuestionsEasy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="textQuestion.resx">
       <DependentUpon>textQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="textQuestionEasy.resx">
+      <DependentUpon>textQuestionEasy.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,6 +203,12 @@
     <None Include="images\combo box PS.png" />
     <None Include="images\login PS.png" />
     <None Include="images\matching pictures PS.png" />
+    <None Include="images\bandage.jpg" />
+    <None Include="images\oxygen mask.jpg" />
+    <None Include="images\sling.jpg" />
+    <None Include="images\broken arm.png" />
+    <None Include="images\open wound.png" />
+    <None Include="images\trouble breathing.png" />
     <Content Include="rdbQuestions.txt" />
     <None Include="Resources\045-ambulance.png" />
     <None Include="Resources\037-first-aid-kit.png" />

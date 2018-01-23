@@ -176,7 +176,7 @@
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.Green;
-            this.lblQuestion.Location = new System.Drawing.Point(13, 70);
+            this.lblQuestion.Location = new System.Drawing.Point(6, 64);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(737, 25);
             this.lblQuestion.TabIndex = 41;
@@ -329,6 +329,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(475, 293);
@@ -340,7 +341,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Black;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(665, 169);
@@ -635,9 +636,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Arial Black", 27.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblTitle.Location = new System.Drawing.Point(21, 18);
+            this.lblTitle.Location = new System.Drawing.Point(14, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 52);
+            this.lblTitle.Size = new System.Drawing.Size(288, 52);
             this.lblTitle.TabIndex = 80;
             this.lblTitle.Text = "Combo Box\'s";
             // 

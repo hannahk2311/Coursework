@@ -25,6 +25,11 @@ namespace SSDCoursework
             lblHighScore.Text = thisPlayer.HighScore.ToString();
             imgAvatar.Image = thisPlayer.Avatar;
 
+            
+        }
+
+        private void listboxQuestions_Load(object sender, EventArgs e)
+        {
             //Question 1
             comboBox1.Items.Add("unconscious but breathing"); //CORRECT
             comboBox1.Items.Add("conscious but not breathing");
@@ -55,11 +60,6 @@ namespace SSDCoursework
             comboBox8.Items.Add("hungry");
             comboBox8.Items.Add("calm");
             comboBox8.Items.Add("violent"); //CORRECT
-        }
-
-        private void listboxQuestions_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -187,10 +187,7 @@ namespace SSDCoursework
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(comboBox3.Text) || string.IsNullOrEmpty(comboBox4.Text) || string.IsNullOrEmpty(comboBox5.Text) || string.IsNullOrEmpty(comboBox6.Text) || string.IsNullOrEmpty(comboBox7.Text) || string.IsNullOrEmpty(comboBox8.Text))
-            //    btnSubmit.Enabled = false;
-            //else
-            //    btnSubmit.Enabled = true;
+            
         }
     }
 }
