@@ -95,18 +95,32 @@ namespace SSDCoursework
             {
                 imgIncorrect6.Visible = true;
             }
+
+            //disable all combo boxes so answers cannot be changed
+            comboBox1.Enabled = false;
+            comboBox2.Enabled = false;
+            comboBox3.Enabled = false;
+            comboBox4.Enabled = false;
+            comboBox5.Enabled = false;
+            comboBox6.Enabled = false;
+
+            //disable submit button so extra points can't be added
+            btnSubmit.Enabled = false;
+
+            //enable next button to move to the next question
+            btnNext.Enabled = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-                 //advance to next question form
-            //this.Hide();
-            //thisPlayer.Score = Score;
-            //Form matchingQuestions = new matchingQuestions(thisPlayer); //create instance of Form1 and pass it the object thisPlayer
-            //matchingQuestions.Show();
+            //advance to next question form
+            this.Hide();
+            thisPlayer.Score = Score;
+            Form matchingQuestionsEasy = new matchingQuestionsEasy(thisPlayer); //create instance of current form and pass it the object thisPlayer
+            matchingQuestionsEasy.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -117,8 +131,8 @@ namespace SSDCoursework
             {
                 //end quiz and go to slash screen
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.imgTitle = new System.Windows.Forms.PictureBox();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnEasy = new System.Windows.Forms.Button();
+            this.btnHard = new System.Windows.Forms.Button();
             this.btnLeaderboard = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.imgLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,35 +56,40 @@
             this.imgTitle.TabIndex = 0;
             this.imgTitle.TabStop = false;
             // 
-            // btnStart
+            // btnEasy
             // 
-            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(71, 128);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(298, 65);
-            this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "Start Quiz";
-            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnEasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnEasy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEasy.ForeColor = System.Drawing.Color.White;
+            this.btnEasy.Location = new System.Drawing.Point(71, 128);
+            this.btnEasy.Name = "btnEasy";
+            this.btnEasy.Size = new System.Drawing.Size(298, 65);
+            this.btnEasy.TabIndex = 1;
+            this.btnEasy.Text = "Easy Mode";
+            this.btnEasy.UseVisualStyleBackColor = false;
+            this.btnEasy.Click += new System.EventHandler(this.btnEasy_Click);
             // 
-            // btnAbout
+            // btnHard
             // 
-            this.btnAbout.BackColor = System.Drawing.Color.Green;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Location = new System.Drawing.Point(71, 216);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(298, 65);
-            this.btnAbout.TabIndex = 2;
-            this.btnAbout.Text = "About Quiz";
-            this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnHard.BackColor = System.Drawing.Color.Green;
+            this.btnHard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHard.ForeColor = System.Drawing.Color.White;
+            this.btnHard.Location = new System.Drawing.Point(71, 216);
+            this.btnHard.Name = "btnHard";
+            this.btnHard.Size = new System.Drawing.Size(298, 65);
+            this.btnHard.TabIndex = 2;
+            this.btnHard.Text = "Hard Mode";
+            this.btnHard.UseVisualStyleBackColor = false;
+            this.btnHard.Click += new System.EventHandler(this.btnHard_Click);
             // 
             // btnLeaderboard
             // 
             this.btnLeaderboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnLeaderboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLeaderboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLeaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeaderboard.ForeColor = System.Drawing.Color.White;
@@ -98,6 +103,7 @@
             // btnLogOut
             // 
             this.btnLogOut.BackColor = System.Drawing.Color.Lime;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
@@ -107,14 +113,16 @@
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // pictureBox2
+            // imgAvatar
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(671, 420);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(93, 133);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.imgAvatar.Location = new System.Drawing.Point(662, 431);
+            this.imgAvatar.Name = "imgAvatar";
+            this.imgAvatar.Size = new System.Drawing.Size(109, 111);
+            this.imgAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgAvatar.TabIndex = 5;
+            this.imgAvatar.TabStop = false;
             // 
             // label1
             // 
@@ -174,6 +182,7 @@
             // btnQuit
             // 
             this.btnQuit.BackColor = System.Drawing.Color.Chartreuse;
+            this.btnQuit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuit.ForeColor = System.Drawing.Color.White;
@@ -183,6 +192,7 @@
             this.btnQuit.TabIndex = 13;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = false;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // imgLogo
             // 
@@ -210,11 +220,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.imgAvatar);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeaderboard);
-            this.Controls.Add(this.btnAbout);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnHard);
+            this.Controls.Add(this.btnEasy);
             this.Controls.Add(this.imgTitle);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -224,7 +234,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,11 +244,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox imgTitle;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnEasy;
+        private System.Windows.Forms.Button btnHard;
         private System.Windows.Forms.Button btnLeaderboard;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox imgAvatar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

@@ -88,8 +88,8 @@ namespace SSDCoursework
 
             readFileToArray();
             this.Hide();
-            Form listboxQuestions = new listboxQuestions(thisPlayer);
-            listboxQuestions.Show();
+            Form Menu = new Menu(thisPlayer);
+            Menu.Show();
 
             //password validation
             string newPassword = txtPassword.Text;
@@ -117,8 +117,8 @@ namespace SSDCoursework
                         this.Hide();
 
                         //open next form
-                        Form listboxQuestions = new listboxQuestions(players[i]);
-                        listboxQuestions.Show();
+                        Form Menu= new Menu(players[i]);
+                        Menu.Show();
                     }
                 }
             }
@@ -149,22 +149,22 @@ namespace SSDCoursework
 
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            //forgiveness
-            DialogResult result =
-                MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Warning);
-            if (result.Equals(DialogResult.OK))
-            {
-                Application.Exit();
-            }
-            else
-            {
-                //Do Nothing
-            }
-        }
+        //private void btnClose_Click(object sender, EventArgs e)
+        //{
+        //    //forgiveness
+        //    DialogResult result =
+        //        MessageBox.Show("Are you sure you would like to quit the quiz?", "Exit Quiz",
+        //        MessageBoxButtons.OKCancel,
+        //        MessageBoxIcon.Warning);
+        //    if (result.Equals(DialogResult.OK))
+        //    {
+        //        Application.Exit();
+        //    }
+        //    else
+        //    {
+        //        //Do Nothing
+        //    }
+        //}
 
         private void login_FormClosed(object sender, FormClosedEventArgs e)
         {

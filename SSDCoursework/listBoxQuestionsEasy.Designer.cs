@@ -31,7 +31,7 @@
             this.imgHelp = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblQuestion = new System.Windows.Forms.Label();
@@ -116,24 +116,25 @@
             this.label2.TabIndex = 94;
             this.label2.Text = "Player Details: ";
             // 
-            // btnClose
+            // btnMenu
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Green;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(637, 513);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 52);
-            this.btnClose.TabIndex = 85;
-            this.btnClose.Text = "Log Out";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnMenu.BackColor = System.Drawing.Color.Green;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Location = new System.Drawing.Point(637, 513);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(113, 52);
+            this.btnMenu.TabIndex = 85;
+            this.btnMenu.Text = "Main Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Green;
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.Enabled = false;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.Location = new System.Drawing.Point(334, 513);
@@ -258,6 +259,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
@@ -268,7 +270,7 @@
             "take a picture"});
             this.comboBox1.Location = new System.Drawing.Point(470, 107);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 28);
+            this.comboBox1.Size = new System.Drawing.Size(257, 28);
             this.comboBox1.TabIndex = 98;
             // 
             // label4
@@ -284,6 +286,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.Color.Black;
@@ -293,7 +296,7 @@
             "fingers, toes or ears"});
             this.comboBox2.Location = new System.Drawing.Point(319, 168);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(128, 28);
+            this.comboBox2.Size = new System.Drawing.Size(191, 28);
             this.comboBox2.TabIndex = 100;
             // 
             // label5
@@ -309,6 +312,7 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.ForeColor = System.Drawing.Color.Black;
@@ -319,7 +323,7 @@
             "offer them food"});
             this.comboBox3.Location = new System.Drawing.Point(334, 231);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(202, 28);
+            this.comboBox3.Size = new System.Drawing.Size(263, 28);
             this.comboBox3.TabIndex = 102;
             // 
             // label6
@@ -335,6 +339,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.ForeColor = System.Drawing.Color.Black;
@@ -346,7 +351,7 @@
             "run it under cold water"});
             this.comboBox4.Location = new System.Drawing.Point(324, 290);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(168, 28);
+            this.comboBox4.Size = new System.Drawing.Size(230, 28);
             this.comboBox4.TabIndex = 104;
             // 
             // label7
@@ -362,6 +367,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.ForeColor = System.Drawing.Color.Black;
@@ -372,7 +378,7 @@
             "rub your eye"});
             this.comboBox5.Location = new System.Drawing.Point(330, 350);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(180, 28);
+            this.comboBox5.Size = new System.Drawing.Size(237, 28);
             this.comboBox5.TabIndex = 106;
             // 
             // label8
@@ -388,6 +394,7 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.ForeColor = System.Drawing.Color.Black;
@@ -399,13 +406,13 @@
             "pinch your nose and lean forward"});
             this.comboBox6.Location = new System.Drawing.Point(397, 405);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(249, 28);
+            this.comboBox6.Size = new System.Drawing.Size(279, 28);
             this.comboBox6.TabIndex = 108;
             // 
             // imgIncorrect6
             // 
             this.imgIncorrect6.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect6.Location = new System.Drawing.Point(706, 398);
+            this.imgIncorrect6.Location = new System.Drawing.Point(768, 398);
             this.imgIncorrect6.Name = "imgIncorrect6";
             this.imgIncorrect6.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -416,7 +423,7 @@
             // imgIncorrect5
             // 
             this.imgIncorrect5.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect5.Location = new System.Drawing.Point(706, 338);
+            this.imgIncorrect5.Location = new System.Drawing.Point(768, 338);
             this.imgIncorrect5.Name = "imgIncorrect5";
             this.imgIncorrect5.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -427,7 +434,7 @@
             // imgIncorrect4
             // 
             this.imgIncorrect4.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect4.Location = new System.Drawing.Point(706, 278);
+            this.imgIncorrect4.Location = new System.Drawing.Point(768, 278);
             this.imgIncorrect4.Name = "imgIncorrect4";
             this.imgIncorrect4.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -438,7 +445,7 @@
             // imgIncorrect3
             // 
             this.imgIncorrect3.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect3.Location = new System.Drawing.Point(706, 227);
+            this.imgIncorrect3.Location = new System.Drawing.Point(768, 227);
             this.imgIncorrect3.Name = "imgIncorrect3";
             this.imgIncorrect3.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -449,7 +456,7 @@
             // imgIncorrect2
             // 
             this.imgIncorrect2.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect2.Location = new System.Drawing.Point(706, 164);
+            this.imgIncorrect2.Location = new System.Drawing.Point(768, 164);
             this.imgIncorrect2.Name = "imgIncorrect2";
             this.imgIncorrect2.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -460,7 +467,7 @@
             // imgIncorrect1
             // 
             this.imgIncorrect1.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect1.Location = new System.Drawing.Point(706, 107);
+            this.imgIncorrect1.Location = new System.Drawing.Point(768, 107);
             this.imgIncorrect1.Name = "imgIncorrect1";
             this.imgIncorrect1.Size = new System.Drawing.Size(30, 40);
             this.imgIncorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -471,7 +478,7 @@
             // imgCorrect6
             // 
             this.imgCorrect6.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect6.Location = new System.Drawing.Point(693, 398);
+            this.imgCorrect6.Location = new System.Drawing.Point(755, 398);
             this.imgCorrect6.Name = "imgCorrect6";
             this.imgCorrect6.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -482,7 +489,7 @@
             // imgCorrect5
             // 
             this.imgCorrect5.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect5.Location = new System.Drawing.Point(693, 338);
+            this.imgCorrect5.Location = new System.Drawing.Point(755, 338);
             this.imgCorrect5.Name = "imgCorrect5";
             this.imgCorrect5.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -493,7 +500,7 @@
             // imgCorrect4
             // 
             this.imgCorrect4.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect4.Location = new System.Drawing.Point(693, 278);
+            this.imgCorrect4.Location = new System.Drawing.Point(755, 278);
             this.imgCorrect4.Name = "imgCorrect4";
             this.imgCorrect4.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -504,7 +511,7 @@
             // imgCorrect3
             // 
             this.imgCorrect3.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect3.Location = new System.Drawing.Point(693, 227);
+            this.imgCorrect3.Location = new System.Drawing.Point(755, 227);
             this.imgCorrect3.Name = "imgCorrect3";
             this.imgCorrect3.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -515,7 +522,7 @@
             // imgCorrect2
             // 
             this.imgCorrect2.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect2.Location = new System.Drawing.Point(693, 164);
+            this.imgCorrect2.Location = new System.Drawing.Point(755, 164);
             this.imgCorrect2.Name = "imgCorrect2";
             this.imgCorrect2.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -526,7 +533,7 @@
             // imgCorrect1
             // 
             this.imgCorrect1.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgCorrect1.Location = new System.Drawing.Point(693, 107);
+            this.imgCorrect1.Location = new System.Drawing.Point(755, 107);
             this.imgCorrect1.Name = "imgCorrect1";
             this.imgCorrect1.Size = new System.Drawing.Size(30, 40);
             this.imgCorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -569,7 +576,7 @@
             this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblQuestion);
@@ -582,6 +589,7 @@
             this.Controls.Add(this.label15);
             this.DoubleBuffered = true;
             this.Name = "listBoxQuestionsEasy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listBoxQuestionsEasy";
             ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
@@ -607,7 +615,7 @@
         private System.Windows.Forms.PictureBox imgHelp;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblQuestion;

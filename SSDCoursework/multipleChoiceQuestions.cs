@@ -85,14 +85,14 @@ namespace SSDCoursework
             }
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            //Form textQuestion = new textQuestion(thisPlayer);
-            //textQuestion.Show();
-        }
+        //private void btnNext_Click(object sender, EventArgs e)
+        //{
+        //    //this.Hide();
+        //    //Form textQuestion = new textQuestion(thisPlayer);
+        //    //textQuestion.Show();
+        //}
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -102,8 +102,8 @@ namespace SSDCoursework
             if (result.Equals(DialogResult.OK))
             {
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }

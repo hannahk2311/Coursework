@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace SSDCoursework
 {
@@ -30,22 +31,12 @@ namespace SSDCoursework
             Score = thisPlayer.Score;
         }
 
-        private void btnOpenQuestion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnOpenQuestion_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
         private void randomizedRadioButtons_Load(object sender, EventArgs e)
         {
             try
             {
                 int arrayLength = 0;
-                string file_name = "D:\\Computing\\18-01-18 SSDCoursework\\SSDCoursework\\rdbQuestions.txt";
+                string file_name = "F:\\Computing\\28-01-18 SSDCoursework\\SSDCoursework\\rdbQuestions.txt";
 
                 System.IO.StreamReader objReader;
                 objReader = new System.IO.StreamReader(file_name);
@@ -81,6 +72,29 @@ namespace SSDCoursework
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            //forgiveness
+            DialogResult result =
+                MessageBox.Show("Are you sure you want to return to the Menu?", "Exit Quiz",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.OK))
+            {
+                this.Hide();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
+
+                //Application.Exit();
+            }
+            else
+            {
+                //Do Nothing
             }
         }
     }

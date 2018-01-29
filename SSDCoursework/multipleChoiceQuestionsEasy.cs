@@ -36,7 +36,7 @@ namespace SSDCoursework
             //textQuestion.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -46,8 +46,8 @@ namespace SSDCoursework
             if (result.Equals(DialogResult.OK))
             {
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }

@@ -18,9 +18,7 @@ namespace SSDCoursework
         }
 
         private void loginHelp_Load(object sender, EventArgs e)
-        {
-            richTextBoxHelp.Text = Properties.Resources.helpLogin;
-        }
+        { }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {

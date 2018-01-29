@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label9 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.lblHighScore = new System.Windows.Forms.Label();
@@ -78,19 +78,19 @@
             this.label9.TabIndex = 35;
             this.label9.Text = "Drag and Drop";
             // 
-            // btnClose
+            // btnMenu
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Green;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(350, 491);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 52);
-            this.btnClose.TabIndex = 34;
-            this.btnClose.Text = "Log Out";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnMenu.BackColor = System.Drawing.Color.Green;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Location = new System.Drawing.Point(350, 491);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(113, 52);
+            this.btnMenu.TabIndex = 34;
+            this.btnMenu.Text = "Main Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnNext
             // 
@@ -194,6 +194,7 @@
             // 
             // imgBandage
             // 
+            this.imgBandage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgBandage.Image = global::SSDCoursework.Properties.Resources.bandage;
             this.imgBandage.Location = new System.Drawing.Point(45, 233);
             this.imgBandage.Name = "imgBandage";
@@ -206,6 +207,7 @@
             // 
             // imgSling
             // 
+            this.imgSling.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgSling.Image = global::SSDCoursework.Properties.Resources.sling;
             this.imgSling.Location = new System.Drawing.Point(54, 84);
             this.imgSling.Name = "imgSling";
@@ -218,6 +220,7 @@
             // 
             // imgOxygenMask
             // 
+            this.imgOxygenMask.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgOxygenMask.Image = global::SSDCoursework.Properties.Resources.oxygen_mask;
             this.imgOxygenMask.Location = new System.Drawing.Point(54, 355);
             this.imgOxygenMask.Name = "imgOxygenMask";
@@ -226,7 +229,7 @@
             this.imgOxygenMask.TabIndex = 38;
             this.imgOxygenMask.TabStop = false;
             this.imgOxygenMask.Tag = "OXYGEN";
-            this.imgOxygenMask.Click += new System.EventHandler(this.imgOxygenMask_Click);
+            this.imgOxygenMask.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imgOxygenMask_MouseDown);
             // 
             // imgBandageAns
             // 
@@ -270,7 +273,7 @@
             // imgIncorrect3
             // 
             this.imgIncorrect3.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect3.Location = new System.Drawing.Point(704, 377);
+            this.imgIncorrect3.Location = new System.Drawing.Point(704, 257);
             this.imgIncorrect3.Name = "imgIncorrect3";
             this.imgIncorrect3.Size = new System.Drawing.Size(54, 50);
             this.imgIncorrect3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -281,7 +284,7 @@
             // imgIncorrect2
             // 
             this.imgIncorrect2.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect2.Location = new System.Drawing.Point(704, 255);
+            this.imgIncorrect2.Location = new System.Drawing.Point(704, 132);
             this.imgIncorrect2.Name = "imgIncorrect2";
             this.imgIncorrect2.Size = new System.Drawing.Size(54, 50);
             this.imgIncorrect2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +295,7 @@
             // imgIncorrect1
             // 
             this.imgIncorrect1.Image = global::SSDCoursework.Properties.Resources.incorrect;
-            this.imgIncorrect1.Location = new System.Drawing.Point(704, 126);
+            this.imgIncorrect1.Location = new System.Drawing.Point(704, 380);
             this.imgIncorrect1.Name = "imgIncorrect1";
             this.imgIncorrect1.Size = new System.Drawing.Size(54, 50);
             this.imgIncorrect1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -303,7 +306,7 @@
             // imgTick3
             // 
             this.imgTick3.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgTick3.Location = new System.Drawing.Point(685, 377);
+            this.imgTick3.Location = new System.Drawing.Point(685, 257);
             this.imgTick3.Name = "imgTick3";
             this.imgTick3.Size = new System.Drawing.Size(54, 50);
             this.imgTick3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,7 +318,7 @@
             // 
             this.imgTick2.BackColor = System.Drawing.Color.Black;
             this.imgTick2.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgTick2.Location = new System.Drawing.Point(685, 255);
+            this.imgTick2.Location = new System.Drawing.Point(685, 132);
             this.imgTick2.Name = "imgTick2";
             this.imgTick2.Size = new System.Drawing.Size(54, 50);
             this.imgTick2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -326,7 +329,7 @@
             // imgTick1
             // 
             this.imgTick1.Image = global::SSDCoursework.Properties.Resources.tick;
-            this.imgTick1.Location = new System.Drawing.Point(685, 126);
+            this.imgTick1.Location = new System.Drawing.Point(685, 380);
             this.imgTick1.Name = "imgTick1";
             this.imgTick1.Size = new System.Drawing.Size(54, 50);
             this.imgTick1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -355,7 +358,7 @@
             this.Controls.Add(this.imgSling);
             this.Controls.Add(this.imgBandage);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.imgAvatar);
             this.Controls.Add(this.lblHighScore);
@@ -367,6 +370,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "matchingQuestionsEasy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "matchingQuestionsEasy";
             this.Load += new System.EventHandler(this.matchingQuestionsEasy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
@@ -390,7 +394,7 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.PictureBox imgAvatar;
         private System.Windows.Forms.Label lblHighScore;

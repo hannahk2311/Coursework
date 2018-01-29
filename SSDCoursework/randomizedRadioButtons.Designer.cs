@@ -34,16 +34,16 @@
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblQNumber = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnOpenQuestion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.lblHighScore = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             this.rdbAnswer3.AutoSize = true;
             this.rdbAnswer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAnswer3.ForeColor = System.Drawing.Color.White;
-            this.rdbAnswer3.Location = new System.Drawing.Point(32, 182);
+            this.rdbAnswer3.Location = new System.Drawing.Point(32, 212);
             this.rdbAnswer3.Name = "rdbAnswer3";
             this.rdbAnswer3.Size = new System.Drawing.Size(119, 24);
             this.rdbAnswer3.TabIndex = 13;
@@ -65,7 +65,7 @@
             this.rdbAnswer2.AutoSize = true;
             this.rdbAnswer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAnswer2.ForeColor = System.Drawing.Color.White;
-            this.rdbAnswer2.Location = new System.Drawing.Point(32, 141);
+            this.rdbAnswer2.Location = new System.Drawing.Point(32, 162);
             this.rdbAnswer2.Name = "rdbAnswer2";
             this.rdbAnswer2.Size = new System.Drawing.Size(119, 24);
             this.rdbAnswer2.TabIndex = 12;
@@ -78,7 +78,7 @@
             this.rdbAnswer1.AutoSize = true;
             this.rdbAnswer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAnswer1.ForeColor = System.Drawing.Color.White;
-            this.rdbAnswer1.Location = new System.Drawing.Point(32, 102);
+            this.rdbAnswer1.Location = new System.Drawing.Point(32, 110);
             this.rdbAnswer1.Name = "rdbAnswer1";
             this.rdbAnswer1.Size = new System.Drawing.Size(119, 24);
             this.rdbAnswer1.TabIndex = 11;
@@ -113,25 +113,12 @@
             this.btnSubmit.BackColor = System.Drawing.Color.DarkGreen;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(135, 286);
+            this.btnSubmit.Location = new System.Drawing.Point(32, 281);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(94, 61);
+            this.btnSubmit.Size = new System.Drawing.Size(113, 52);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
-            // 
-            // btnOpenQuestion
-            // 
-            this.btnOpenQuestion.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnOpenQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenQuestion.ForeColor = System.Drawing.Color.White;
-            this.btnOpenQuestion.Location = new System.Drawing.Point(16, 286);
-            this.btnOpenQuestion.Name = "btnOpenQuestion";
-            this.btnOpenQuestion.Size = new System.Drawing.Size(95, 61);
-            this.btnOpenQuestion.TabIndex = 7;
-            this.btnOpenQuestion.Text = "Open Question";
-            this.btnOpenQuestion.UseVisualStyleBackColor = false;
-            this.btnOpenQuestion.Click += new System.EventHandler(this.btnOpenQuestion_Click_1);
             // 
             // label1
             // 
@@ -149,7 +136,7 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.ForeColor = System.Drawing.Color.White;
-            this.lblScore.Location = new System.Drawing.Point(706, 407);
+            this.lblScore.Location = new System.Drawing.Point(723, 421);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(35, 13);
             this.lblScore.TabIndex = 15;
@@ -159,7 +146,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(706, 370);
+            this.lblName.Location = new System.Drawing.Point(723, 384);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 16;
@@ -169,7 +156,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(646, 370);
+            this.label4.Location = new System.Drawing.Point(663, 384);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 17;
@@ -179,7 +166,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(636, 441);
+            this.label5.Location = new System.Drawing.Point(653, 455);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 18;
@@ -189,27 +176,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(646, 407);
+            this.label6.Location = new System.Drawing.Point(663, 421);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 19;
             this.label6.Text = "Score: ";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(517, 344);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Player Details: ";
-            // 
             // imgAvatar
             // 
-            this.imgAvatar.Location = new System.Drawing.Point(520, 370);
+            this.imgAvatar.Location = new System.Drawing.Point(534, 368);
             this.imgAvatar.Name = "imgAvatar";
-            this.imgAvatar.Size = new System.Drawing.Size(100, 84);
+            this.imgAvatar.Size = new System.Drawing.Size(109, 111);
+            this.imgAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgAvatar.TabIndex = 21;
             this.imgAvatar.TabStop = false;
             // 
@@ -217,11 +195,35 @@
             // 
             this.lblHighScore.AutoSize = true;
             this.lblHighScore.ForeColor = System.Drawing.Color.White;
-            this.lblHighScore.Location = new System.Drawing.Point(706, 441);
+            this.lblHighScore.Location = new System.Drawing.Point(723, 455);
             this.lblHighScore.Name = "lblHighScore";
             this.lblHighScore.Size = new System.Drawing.Size(35, 13);
             this.lblHighScore.TabIndex = 22;
             this.lblHighScore.Text = "label8";
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Location = new System.Drawing.Point(32, 395);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(113, 52);
+            this.btnMenu.TabIndex = 23;
+            this.btnMenu.Text = "Main Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(531, 349);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 16);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "Player Details: ";
             // 
             // randomizedRadioButtons
             // 
@@ -232,9 +234,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(782, 495);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.imgAvatar);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -247,7 +250,6 @@
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblQNumber);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnOpenQuestion);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -270,15 +272,15 @@
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblQNumber;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Button btnOpenQuestion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox imgAvatar;
         private System.Windows.Forms.Label lblHighScore;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Label label2;
     }
 }

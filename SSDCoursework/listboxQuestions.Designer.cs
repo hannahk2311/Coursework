@@ -63,7 +63,7 @@
             this.lblNo5 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.imgCorrect8 = new System.Windows.Forms.PictureBox();
             this.imgCorrect7 = new System.Windows.Forms.PictureBox();
             this.imgCorrect6 = new System.Windows.Forms.PictureBox();
@@ -498,6 +498,7 @@
             // 
             this.btnNext.BackColor = System.Drawing.Color.Green;
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.Enabled = false;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.Location = new System.Drawing.Point(334, 513);
@@ -508,19 +509,19 @@
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // btnClose
+            // btnMenu
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Green;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(637, 513);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 52);
-            this.btnClose.TabIndex = 10;
-            this.btnClose.Text = "Log Out";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnMenu.BackColor = System.Drawing.Color.Green;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Location = new System.Drawing.Point(637, 513);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(113, 52);
+            this.btnMenu.TabIndex = 10;
+            this.btnMenu.Text = "Main Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // imgCorrect8
             // 
@@ -638,7 +639,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.Chartreuse;
             this.lblTitle.Location = new System.Drawing.Point(14, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(288, 52);
+            this.lblTitle.Size = new System.Drawing.Size(287, 52);
             this.lblTitle.TabIndex = 80;
             this.lblTitle.Text = "Combo Box\'s";
             // 
@@ -781,7 +782,7 @@
             this.Controls.Add(this.imgCorrect4);
             this.Controls.Add(this.imgCorrect2);
             this.Controls.Add(this.imgCorrect1);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblNo5);
@@ -887,7 +888,7 @@
         private System.Windows.Forms.Label lblNo5;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.PictureBox imgCorrect1;
         private System.Windows.Forms.PictureBox imgCorrect2;
         private System.Windows.Forms.PictureBox imgCorrect4;

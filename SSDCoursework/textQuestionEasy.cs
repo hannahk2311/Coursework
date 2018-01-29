@@ -30,19 +30,98 @@ namespace SSDCoursework
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-        
+            //textbox 1
+            if ((textBox1.Text == "999"))
+            {
+                imgCorrect1.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect1.Visible = true;
+            }
+            //textbox 2
+            if ((textBox2.Text == "xray"))
+            {
+                imgCorrect2.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect2.Visible = true;
+            }
+            //textbox 3
+            if((textBox3.Text=="face"))
+            {
+                imgCorrect3.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect3.Visible = true;
+            }
+            //textbox 4
+            if ((textBox4.Text == "arms"))
+            {
+                imgCorrect4.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect4.Visible = true;
+            }
+            //textbox 5
+            if ((textBox5.Text == "speech"))
+            {
+                imgCorrect5.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect5.Visible = true;
+            }
+            //textbox 6
+            if ((textBox6.Text == "time"))
+            {
+                imgCorrect6.Visible = true;
+                Score += 1;
+                lblScore.Text = Score.ToString();
+            }
+            else
+            {
+                imgIncorrect6.Visible = true;
+            }
+
+            //after submit is pressed all text boxes must be disabled to prevent changing of answers
+            textBox1.Enabled = false;
+            textBox2.Enabled = false;
+            textBox3.Enabled = false;
+            textBox4.Enabled = false;
+            textBox5.Enabled = false;
+            textBox6.Enabled = false;
+
+            //submit button must then also be disabled to prevent further addition of points
+            btnSubmit.Enabled = false;
+
+            //next button is then enabled so that the user can now advance to the next question
+            btnNext.Enabled = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-                    //Advance to next form
-            //this.Hide();
-            //thisPlayer.Score = Score;
-            //Form randomizedRadioButtons = new randomizedRadioButtons(thisPlayer);
-            //randomizedRadioButtons.Show();
+            //Advance to next form
+            this.Hide();
+            thisPlayer.Score = Score;
+            Form randomisedRadioButtonsEasy = new randomisedRadioButtonsEasy(thisPlayer);
+            randomisedRadioButtonsEasy.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -52,8 +131,8 @@ namespace SSDCoursework
             if (result.Equals(DialogResult.OK))
             {
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }
@@ -62,6 +141,5 @@ namespace SSDCoursework
                 //Do Nothing
             }
         }
-        
     }
 }

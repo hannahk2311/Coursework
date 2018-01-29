@@ -113,6 +113,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Questions.cs" />
+    <Compile Include="randomisedRadioButtonsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randomisedRadioButtonsEasy.Designer.cs">
+      <DependentUpon>randomisedRadioButtonsEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="randomizedRadioButtons.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="randomisedRadioButtonsEasy.resx">
+      <DependentUpon>randomisedRadioButtonsEasy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="randomizedRadioButtons.resx">
       <DependentUpon>randomizedRadioButtons.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +207,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="rdbQuestionsEasy.txt" />
     <None Include="images\incorrect.png" />
     <None Include="images\textbox PS.png" />
     <None Include="images\combo box PS.png" />

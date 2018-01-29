@@ -1,18 +1,18 @@
 ﻿1
-test
-a
-b
-c
-a
+What do you do if blood comes through the bandages?
+Apply another bandage to add pressure
+Take the bandage off and let the air at it
+keep replacing the bandages until no more blood is visible
+Apply another bandage to add pressure
 2
-test2
-1
-2
+What should you do if someone has a shard of glass stuck in their wound?
+Leave it be
+Take it out
+Push it in
+Take it out
 3
-2
-3
-test3
-x
-y
-z
-z
+How would you check someone's circulation?
+Take their pulse
+See how fast they're breathing
+Squeeze their finger
+Squeeze their finger

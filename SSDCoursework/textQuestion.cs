@@ -18,6 +18,7 @@ namespace SSDCoursework
         public textQuestion(Player ThisPlayer)
         {
             InitializeComponent();
+            //paramenter passing
             thisPlayer = ThisPlayer;
             lblName.Text = thisPlayer.Name;
             lblScore.Text = thisPlayer.Score.ToString();
@@ -31,7 +32,7 @@ namespace SSDCoursework
 
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -41,8 +42,8 @@ namespace SSDCoursework
             if (result.Equals(DialogResult.OK))
             {
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }
@@ -121,12 +122,19 @@ namespace SSDCoursework
                 imgIncorrect6.Visible = true;
             }
 
+            //after submit is pressed all text boxes must be disabled to prevent changing of answers
             textBox1.Enabled = false;
             textBox2.Enabled = false;
             textBox3.Enabled = false;
             textBox4.Enabled = false;
             textBox5.Enabled = false;
             textBox6.Enabled = false;
+
+            //disabled submit button after answering so that no additional points can be scored
+            btnSubmit.Enabled = false;
+
+            //enable next button to advance to next question
+            btnNext.Enabled = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)

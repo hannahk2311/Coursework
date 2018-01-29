@@ -30,7 +30,6 @@
         {
             this.btnReturn = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.richTextBoxHelp = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnReturn
@@ -58,16 +57,6 @@
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Help Form";
             // 
-            // richTextBoxHelp
-            // 
-            this.richTextBoxHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxHelp.ForeColor = System.Drawing.Color.DarkGreen;
-            this.richTextBoxHelp.Location = new System.Drawing.Point(27, 78);
-            this.richTextBoxHelp.Name = "richTextBoxHelp";
-            this.richTextBoxHelp.Size = new System.Drawing.Size(619, 344);
-            this.richTextBoxHelp.TabIndex = 2;
-            this.richTextBoxHelp.Text = "";
-            // 
             // loginHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -75,7 +64,6 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(684, 506);
             this.ControlBox = false;
-            this.Controls.Add(this.richTextBoxHelp);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -94,6 +82,5 @@
 
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.RichTextBox richTextBoxHelp;
     }
 }

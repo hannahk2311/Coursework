@@ -62,7 +62,7 @@ namespace SSDCoursework
             comboBox8.Items.Add("violent"); //CORRECT
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -73,8 +73,8 @@ namespace SSDCoursework
             {
                 //end quiz and go to slash screen
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }
@@ -174,6 +174,22 @@ namespace SSDCoursework
             {
                 imgIncorrect8.Visible = true;
             }
+
+            //disable all combo boxes after answers are submitted
+            comboBox1.Enabled = false;
+            comboBox2.Enabled = false;
+            comboBox3.Enabled = false;
+            comboBox4.Enabled = false;
+            comboBox5.Enabled = false;
+            comboBox6.Enabled = false;
+            comboBox7.Enabled = false;
+            comboBox8.Enabled = false;
+
+            //must then disable submit button so no extra points can be scored
+            btnSubmit.Enabled = false;
+
+            //next button enabled so the user can advance through the quiz
+            btnNext.Enabled = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)

@@ -36,14 +36,14 @@ namespace SSDCoursework
         //Buttons
         private void btnNext_Click(object sender, EventArgs e)
         {
-                    //advance to next question form
-            //this.Hide();
-            //thisPlayer.Score = Score;
-            //Form textQuestion = new textQuestion(thisPlayer);
-            //textQuestion.Show();
+            //advance to next question form
+            this.Hide();
+            thisPlayer.Score = Score;
+            Form textQuestionEasy = new textQuestionEasy(thisPlayer);
+            textQuestionEasy.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
@@ -54,8 +54,8 @@ namespace SSDCoursework
             {
                 //end quiz and go back to splash screen
                 this.Hide();
-                Form splashScreen = new splashScreen();
-                splashScreen.Show();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
 
                 //Application.Exit();
             }
@@ -151,8 +151,17 @@ namespace SSDCoursework
 
 
 
+
+        //private void imgOxygenMask_Click(object sender, EventArgs e)
+        //{
+        //    //store tag in selectedPicture
+        //    selectedPicture = imgOxygenMask.Tag.ToString();
+        //    imgOxygenMask.DoDragDrop(imgOxygenMask.Image, DragDropEffects.Copy);
+        //}
+
+
         //Third picture
-        private void imgOxygenMask_Click(object sender, EventArgs e)
+        private void imgOxygenMask_MouseDown(object sender, MouseEventArgs e)
         {
             //store tag in selectedPicture
             selectedPicture = imgOxygenMask.Tag.ToString();
@@ -182,5 +191,7 @@ namespace SSDCoursework
         {
             e.Effect = DragDropEffects.Copy;
         }
+
+        
     }
 }

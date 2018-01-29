@@ -35,7 +35,6 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.txtRepeat = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -47,7 +46,6 @@
             this.imgTitle = new System.Windows.Forms.PictureBox();
             this.imgAvatar2 = new System.Windows.Forms.PictureBox();
             this.imgAvatar1 = new System.Windows.Forms.PictureBox();
-            this.lblValidation = new System.Windows.Forms.Label();
             this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar2)).BeginInit();
@@ -128,27 +126,13 @@
             this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(71, 500);
+            this.btnCreate.Location = new System.Drawing.Point(140, 500);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 31);
             this.btnCreate.TabIndex = 30;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Green;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(189, 500);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 31);
-            this.btnClose.TabIndex = 29;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtRepeat
             // 
@@ -269,19 +253,6 @@
             this.imgAvatar1.TabStop = false;
             this.imgAvatar1.Click += new System.EventHandler(this.imgAvatar1_Click);
             // 
-            // lblValidation
-            // 
-            this.lblValidation.AutoSize = true;
-            this.lblValidation.BackColor = System.Drawing.Color.Transparent;
-            this.lblValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValidation.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblValidation.Location = new System.Drawing.Point(299, 174);
-            this.lblValidation.Name = "lblValidation";
-            this.lblValidation.Size = new System.Drawing.Size(190, 72);
-            this.lblValidation.TabIndex = 40;
-            this.lblValidation.Text = "Usernames and passwords\r\nmust be between 6 and 20\r\ncharacters long and\r\nall lower" +
-    "case";
-            // 
             // imgHelp
             // 
             this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -303,7 +274,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(763, 551);
             this.ControlBox = false;
-            this.Controls.Add(this.lblValidation);
             this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgTitle);
             this.Controls.Add(this.btnLogin);
@@ -313,7 +283,6 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.imgAvatar2);
             this.Controls.Add(this.imgAvatar1);
             this.Controls.Add(this.txtRepeat);
@@ -351,7 +320,6 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox imgAvatar2;
         private System.Windows.Forms.PictureBox imgAvatar1;
         private System.Windows.Forms.TextBox txtRepeat;
@@ -363,7 +331,6 @@
         private System.Windows.Forms.Label lblNewUsername;
         private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.PictureBox imgTitle;
-        private System.Windows.Forms.Label lblValidation;
         private System.Windows.Forms.PictureBox imgHelp;
     }
 }
