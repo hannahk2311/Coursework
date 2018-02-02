@@ -51,6 +51,7 @@
             this.imgTick3 = new System.Windows.Forms.PictureBox();
             this.imgTick2 = new System.Windows.Forms.PictureBox();
             this.imgTick1 = new System.Windows.Forms.PictureBox();
+            this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBandage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSling)).BeginInit();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgTick3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -74,7 +76,7 @@
             this.label9.ForeColor = System.Drawing.Color.LawnGreen;
             this.label9.Location = new System.Drawing.Point(15, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(270, 45);
+            this.label9.Size = new System.Drawing.Size(267, 45);
             this.label9.TabIndex = 35;
             this.label9.Text = "Drag and Drop";
             // 
@@ -337,6 +339,18 @@
             this.imgTick1.TabStop = false;
             this.imgTick1.Visible = false;
             // 
+            // imgHelp
+            // 
+            this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgHelp.Image = global::SSDCoursework.Properties.Resources.help;
+            this.imgHelp.Location = new System.Drawing.Point(822, 12);
+            this.imgHelp.Name = "imgHelp";
+            this.imgHelp.Size = new System.Drawing.Size(51, 50);
+            this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgHelp.TabIndex = 98;
+            this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
+            // 
             // matchingQuestionsEasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +359,8 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(888, 552);
+            this.ControlBox = false;
+            this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgIncorrect3);
             this.Controls.Add(this.imgIncorrect2);
             this.Controls.Add(this.imgIncorrect1);
@@ -369,9 +385,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "matchingQuestionsEasy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "matchingQuestionsEasy";
+            this.Text = "Drag and Drop";
             this.Load += new System.EventHandler(this.matchingQuestionsEasy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBandage)).EndInit();
@@ -386,6 +404,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgTick3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgTick1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +435,6 @@
         private System.Windows.Forms.PictureBox imgTick3;
         private System.Windows.Forms.PictureBox imgTick2;
         private System.Windows.Forms.PictureBox imgTick1;
+        private System.Windows.Forms.PictureBox imgHelp;
     }
 }

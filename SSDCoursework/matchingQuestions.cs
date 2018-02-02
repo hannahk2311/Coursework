@@ -14,7 +14,7 @@ namespace SSDCoursework
     {
         //declare classes
         Player thisPlayer;
-        public int Score ;
+        public int Score;
 
 
         //variable to store picture tag
@@ -68,7 +68,7 @@ namespace SSDCoursework
             {
                 //if it's correct
                 imgTick3.Visible = true;
-                Score += 1;
+                Score += 2;
                 selectedPicture = "";
                 lblScore.Text = Score.ToString();
             }
@@ -105,7 +105,7 @@ namespace SSDCoursework
             {
                 //if it's correct
                 imgTick1.Visible = true;
-                Score += 1;
+                Score += 2;
                 selectedPicture = "";
                 lblScore.Text = Score.ToString();
             }
@@ -142,7 +142,7 @@ namespace SSDCoursework
             {
                 //if it's correct
                 imgTick2.Visible = true;
-                Score += 1;
+                Score += 2;
                 selectedPicture = "";
                 lblScore.Text = Score.ToString();
             }
@@ -177,7 +177,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to log out?", "Log out?",
+                MessageBox.Show("Are you sure you want to return to the menu?", "Exit Quiz?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -193,6 +193,12 @@ namespace SSDCoursework
             {
                 //Do Nothing
             }
+        }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form hardDragDropHelp = new hardDragDropHelp();
+            hardDragDropHelp.Show();
         }
     }
 }

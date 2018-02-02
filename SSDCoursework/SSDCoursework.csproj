@@ -44,6 +44,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="easyDragDropHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="easyDragDropHelp.Designer.cs">
+      <DependentUpon>easyDragDropHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="easyListboxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="easyListboxHelp.Designer.cs">
+      <DependentUpon>easyListboxHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="easyRadioButtonsHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="easyRadioButtonsHelp.Designer.cs">
+      <DependentUpon>easyRadioButtonsHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="easyTextboxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="easyTextboxHelp.Designer.cs">
+      <DependentUpon>easyTextboxHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endScreen.Designer.cs">
+      <DependentUpon>endScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finishScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finishScreen.Designer.cs">
+      <DependentUpon>finishScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hardDragDropHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hardDragDropHelp.Designer.cs">
+      <DependentUpon>hardDragDropHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hardListboxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hardListboxHelp.Designer.cs">
+      <DependentUpon>hardListboxHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hardRadioButtonsHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hardRadioButtonsHelp.Designer.cs">
+      <DependentUpon>hardRadioButtonsHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hardTextboxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hardTextboxHelp.Designer.cs">
+      <DependentUpon>hardTextboxHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="images\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="images\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="listboxQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,29 +146,17 @@
     <Compile Include="matchingQuestionsEasy.Designer.cs">
       <DependentUpon>matchingQuestionsEasy.cs</DependentUpon>
     </Compile>
-    <Compile Include="matchingQuestionsHelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="matchingQuestionsHelp.Designer.cs">
-      <DependentUpon>matchingQuestionsHelp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="multipleChoiceQuestions.cs">
+    <Compile Include="menuHelp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="multipleChoiceQuestions.Designer.cs">
-      <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="multipleChoiceQuestionsEasy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="multipleChoiceQuestionsEasy.Designer.cs">
-      <DependentUpon>multipleChoiceQuestionsEasy.cs</DependentUpon>
+    <Compile Include="menuHelp.Designer.cs">
+      <DependentUpon>menuHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -143,6 +197,39 @@
     <Compile Include="textQuestionEasy.Designer.cs">
       <DependentUpon>textQuestionEasy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="easyDragDropHelp.resx">
+      <DependentUpon>easyDragDropHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easyListboxHelp.resx">
+      <DependentUpon>easyListboxHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easyRadioButtonsHelp.resx">
+      <DependentUpon>easyRadioButtonsHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easyTextboxHelp.resx">
+      <DependentUpon>easyTextboxHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endScreen.resx">
+      <DependentUpon>endScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finishScreen.resx">
+      <DependentUpon>finishScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hardDragDropHelp.resx">
+      <DependentUpon>hardDragDropHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hardListboxHelp.resx">
+      <DependentUpon>hardListboxHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hardRadioButtonsHelp.resx">
+      <DependentUpon>hardRadioButtonsHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hardTextboxHelp.resx">
+      <DependentUpon>hardTextboxHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="images\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listboxQuestions.resx">
       <DependentUpon>listboxQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,17 +248,11 @@
     <EmbeddedResource Include="matchingQuestionsEasy.resx">
       <DependentUpon>matchingQuestionsEasy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="matchingQuestionsHelp.resx">
-      <DependentUpon>matchingQuestionsHelp.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="multipleChoiceQuestions.resx">
-      <DependentUpon>multipleChoiceQuestions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="multipleChoiceQuestionsEasy.resx">
-      <DependentUpon>multipleChoiceQuestionsEasy.cs</DependentUpon>
+    <EmbeddedResource Include="menuHelp.resx">
+      <DependentUpon>menuHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -193,6 +274,7 @@
     <EmbeddedResource Include="textQuestionEasy.resx">
       <DependentUpon>textQuestionEasy.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Help Forms\combo box help - easy.psd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -207,6 +289,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\well done.jpg" />
+    <None Include="images\good job.png" />
+    <None Include="images\hard radio buttons help.jpg" />
+    <None Include="images\hard textbox help.jpg" />
+    <None Include="images\login help.jpg" />
+    <None Include="images\menu help.jpg" />
+    <None Include="images\easy combo box help.jpg" />
+    <None Include="images\easy drag and drop help.jpg" />
+    <None Include="images\easy radio buttons help.jpg" />
+    <None Include="images\easy textbox help.jpg" />
+    <None Include="images\hard combo box help.jpg" />
+    <None Include="images\hard drag and drop help.jpg" />
     <Content Include="rdbQuestionsEasy.txt" />
     <None Include="images\incorrect.png" />
     <None Include="images\textbox PS.png" />
@@ -231,7 +325,6 @@
     <None Include="images\BURN.png" />
     <None Include="images\contusion wound.jpg" />
     <None Include="images\CONTUSION.png" />
-    <Content Include="helpData\helpLogin.txt" />
     <Content Include="images\femaledoc2.jpg" />
     <None Include="images\First Aid Quiz.png" />
     <None Include="images\heartbeatGif.gif" />

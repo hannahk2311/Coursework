@@ -81,5 +81,11 @@ namespace SSDCoursework
                 //Do Nothing
             } 
         }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form menuHelp = new menuHelp();
+            menuHelp.Show();
+        }
     }
 }

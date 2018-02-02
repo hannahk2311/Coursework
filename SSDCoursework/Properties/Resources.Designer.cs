@@ -143,16 +143,6 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap combo_box_PS {
-            get {
-                object obj = ResourceManager.GetObject("combo_box_PS", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CONTUSION {
             get {
                 object obj = ResourceManager.GetObject("CONTUSION", resourceCulture);
@@ -166,6 +156,46 @@ namespace SSDCoursework.Properties {
         internal static System.Drawing.Bitmap contusion_wound {
             get {
                 object obj = ResourceManager.GetObject("contusion_wound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap easy_combo_box_help {
+            get {
+                object obj = ResourceManager.GetObject("easy_combo_box_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap easy_drag_and_drop_help {
+            get {
+                object obj = ResourceManager.GetObject("easy_drag_and_drop_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap easy_radio_buttons_help {
+            get {
+                object obj = ResourceManager.GetObject("easy_radio_buttons_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap easy_textbox_help {
+            get {
+                object obj = ResourceManager.GetObject("easy_textbox_help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +223,56 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap good_job {
+            get {
+                object obj = ResourceManager.GetObject("good_job", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hard_combo_box_help {
+            get {
+                object obj = ResourceManager.GetObject("hard_combo_box_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hard_drag_and_drop_help {
+            get {
+                object obj = ResourceManager.GetObject("hard_drag_and_drop_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hard_radio_buttons_help {
+            get {
+                object obj = ResourceManager.GetObject("hard_radio_buttons_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hard_textbox_help {
+            get {
+                object obj = ResourceManager.GetObject("hard_textbox_help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap heartbeatGif {
             get {
                 object obj = ResourceManager.GetObject("heartbeatGif", resourceCulture);
@@ -207,27 +287,6 @@ namespace SSDCoursework.Properties {
             get {
                 object obj = ResourceManager.GetObject("help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is the Login form where you can create a new account or log into an existing one.
-        ///
-        ///
-        ///Signing Up:
-        /// ~ You should create a suitable username and password.
-        /// ~ You must repeat your password to ensure you typed it correctly.
-        /// ~ If the username is the same as an existing account you will be prompted to choose a different one.
-        /// ~ You must then choose an avatar of your liking and then click [Create].
-        ///
-        ///
-        ///Logging In:
-        /// ~ If you already have an account, enter your username and password.
-        /// ~ You should then [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string helpLogin {
-            get {
-                return ResourceManager.GetString("helpLogin", resourceCulture);
             }
         }
         
@@ -254,9 +313,9 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap login_PS {
+        internal static System.Drawing.Bitmap login_help {
             get {
-                object obj = ResourceManager.GetObject("login_PS", resourceCulture);
+                object obj = ResourceManager.GetObject("login_help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -264,9 +323,9 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap matching_pictures_PS {
+        internal static System.Drawing.Bitmap menu_help {
             get {
-                object obj = ResourceManager.GetObject("matching_pictures_PS", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -314,16 +373,6 @@ namespace SSDCoursework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap textbox_PS {
-            get {
-                object obj = ResourceManager.GetObject("textbox_PS", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tick {
             get {
                 object obj = ResourceManager.GetObject("tick", resourceCulture);
@@ -347,6 +396,16 @@ namespace SSDCoursework.Properties {
         internal static System.Drawing.Bitmap trouble_breathing {
             get {
                 object obj = ResourceManager.GetObject("trouble_breathing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap well_done {
+            get {
+                object obj = ResourceManager.GetObject("well_done", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

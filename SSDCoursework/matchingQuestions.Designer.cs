@@ -55,6 +55,7 @@
             this.imgIncorrect1 = new System.Windows.Forms.PictureBox();
             this.imgIncorrect2 = new System.Windows.Forms.PictureBox();
             this.imgIncorrect3 = new System.Windows.Forms.PictureBox();
+            this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgBurn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAbrasion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgContusion)).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -349,7 +351,7 @@
             this.label9.ForeColor = System.Drawing.Color.LawnGreen;
             this.label9.Location = new System.Drawing.Point(12, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(270, 45);
+            this.label9.Size = new System.Drawing.Size(267, 45);
             this.label9.TabIndex = 24;
             this.label9.Text = "Drag and Drop";
             // 
@@ -386,6 +388,18 @@
             this.imgIncorrect3.TabStop = false;
             this.imgIncorrect3.Visible = false;
             // 
+            // imgHelp
+            // 
+            this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgHelp.Image = global::SSDCoursework.Properties.Resources.help;
+            this.imgHelp.Location = new System.Drawing.Point(819, 12);
+            this.imgHelp.Name = "imgHelp";
+            this.imgHelp.Size = new System.Drawing.Size(51, 50);
+            this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgHelp.TabIndex = 97;
+            this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
+            // 
             // matchingQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,6 +409,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(886, 550);
             this.ControlBox = false;
+            this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgIncorrect3);
             this.Controls.Add(this.imgIncorrect2);
             this.Controls.Add(this.imgIncorrect1);
@@ -428,7 +443,7 @@
             this.MinimizeBox = false;
             this.Name = "matchingQuestions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "matchingQuestions";
+            this.Text = "Drag and Drop";
             this.Load += new System.EventHandler(this.matchingQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgBurn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAbrasion)).EndInit();
@@ -443,6 +458,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,5 +493,6 @@
         private System.Windows.Forms.PictureBox imgIncorrect1;
         private System.Windows.Forms.PictureBox imgIncorrect2;
         private System.Windows.Forms.PictureBox imgIncorrect3;
+        private System.Windows.Forms.PictureBox imgHelp;
     }
 }

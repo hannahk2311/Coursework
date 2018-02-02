@@ -92,6 +92,7 @@
             this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgHelp.TabIndex = 96;
             this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
             // 
             // lblTitle
             // 
@@ -101,9 +102,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.Chartreuse;
             this.lblTitle.Location = new System.Drawing.Point(14, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 52);
+            this.lblTitle.Size = new System.Drawing.Size(303, 52);
             this.lblTitle.TabIndex = 95;
-            this.lblTitle.Text = "Combo Box\'s";
+            this.lblTitle.Text = "Combo Boxes";
             // 
             // label2
             // 
@@ -549,6 +550,7 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1068, 576);
+            this.ControlBox = false;
             this.Controls.Add(this.imgIncorrect6);
             this.Controls.Add(this.imgIncorrect5);
             this.Controls.Add(this.imgIncorrect4);
@@ -588,9 +590,11 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label15);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "listBoxQuestionsEasy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "listBoxQuestionsEasy";
+            this.Text = "Combo Boxes";
             ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).EndInit();

@@ -639,9 +639,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.Chartreuse;
             this.lblTitle.Location = new System.Drawing.Point(14, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 52);
+            this.lblTitle.Size = new System.Drawing.Size(303, 52);
             this.lblTitle.TabIndex = 80;
-            this.lblTitle.Text = "Combo Box\'s";
+            this.lblTitle.Text = "Combo Boxes";
             // 
             // label25
             // 
@@ -664,6 +664,7 @@
             this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgHelp.TabIndex = 82;
             this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
             // 
             // imgIncorrect1
             // 
@@ -825,7 +826,7 @@
             this.MinimizeBox = false;
             this.Name = "listboxQuestions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListBox";
+            this.Text = "Combo Boxes";
             this.Load += new System.EventHandler(this.listboxQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect7)).EndInit();

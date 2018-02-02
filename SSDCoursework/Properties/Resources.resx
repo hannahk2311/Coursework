@@ -163,26 +163,11 @@
   <data name="_045_ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\045-ambulance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="helpLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\helpdata\helplogin.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="incorrect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\incorrect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="combo_box_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\combo box PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\login PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="textbox_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\textbox PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="matching_pictures_PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\matching pictures PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bandage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\bandage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,5 +186,41 @@
   </data>
   <data name="trouble_breathing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\trouble breathing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="well_done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\well done.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="good_job" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\good job.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="easy_combo_box_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\easy combo box help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="easy_drag_and_drop_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\easy drag and drop help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="easy_radio_buttons_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\easy radio buttons help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="easy_textbox_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\easy textbox help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hard_combo_box_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hard combo box help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hard_drag_and_drop_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hard drag and drop help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hard_radio_buttons_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hard radio buttons help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hard_textbox_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hard textbox help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\login help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu help.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -72,7 +72,7 @@
             this.Name = "splashScreen";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "splashScreen";
+            this.Text = "Splash Screen";
             this.Load += new System.EventHandler(this.splashScreen_Load);
             this.Shown += new System.EventHandler(this.splashScreen_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();

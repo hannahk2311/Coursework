@@ -18,6 +18,7 @@ namespace SSDCoursework
         Questions[] arrayList = new Questions[3];
         int[] dummyArray = new int[3] { -1, -1, -1 };
         public int Score;
+        int correctAnsElement;
 
         public randomizedRadioButtons(Player ThisPlayer)
         {
@@ -61,7 +62,7 @@ namespace SSDCoursework
                 {
                     randomElement = rnd.Next(arrayLength);
                 } while (dummyArray[randomElement] != -1);
-
+                correctAnsElement = randomElement;
                 dummyArray[randomElement] = 1;
                 lblQNumber.Text = arrayList[randomElement].QuestionNo.ToString();
                 lblQuestion.Text = arrayList[randomElement].Question;
@@ -75,27 +76,81 @@ namespace SSDCoursework
             }
         }
 
-        
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (rdbAnswer1.Checked == true)
+            {
+                if (rdbAnswer1.Text == arrayList[correctAnsElement].CorrectAns)
+                {
+                    imgCorrect1.Visible=true;
+                    Score += 2;
+                    lblScore.Text = Score.ToString();
+                }
+                else
+                {
+                    imgIncorrect1.Visible=true;
+                }
+            }
+            if (rdbAnswer2.Checked == true)
+            {
+                if (rdbAnswer2.Text == arrayList[correctAnsElement].CorrectAns)
+                {
+                    imgCorrect2.Visible=true;
+                    Score += 2;
+                    lblScore.Text = Score.ToString();
+                }
+                else
+                {
+                    imgIncorrect2.Visible=true;
+                }
+            }
+            if (rdbAnswer3.Checked == true)
+            {
+                if (rdbAnswer3.Text == arrayList[correctAnsElement].CorrectAns)
+                {
+                    imgCorrect3.Visible=true;
+                    Score += 2;
+                    lblScore.Text = Score.ToString();
+                }
+                else
+                {
+                    imgIncorrect3.Visible=true;
+                }
+            }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+            //disable radio buttons after submit button is clicked so answers cannot be changed and resubmitted
+            rdbAnswer1.Enabled = false;
+            rdbAnswer2.Enabled = false;
+            rdbAnswer3.Enabled = false;
+
+            //disable submit button so that no extra points can be added
+            btnSubmit.Enabled = false;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to return to the Menu?", "Exit Quiz",
+                MessageBox.Show("Are you sure you want to move on?", "Next Page",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
             {
                 this.Hide();
-                Form Menu = new Menu(thisPlayer);
-                Menu.Show();
-
-                //Application.Exit();
+                thisPlayer.Score = Score;
+                Form endScreen = new endScreen(thisPlayer);
+                endScreen.Show();
             }
             else
             {
                 //Do Nothing
             }
+        }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form easyRadioButtonsHelp = new easyRadioButtonsHelp();
+            easyRadioButtonsHelp.Show();
         }
     }
 }

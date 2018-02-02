@@ -47,7 +47,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to log out?", "Log out?",
+                MessageBox.Show("Are you sure you want to return to menu?", "Return to main menu?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -190,6 +190,12 @@ namespace SSDCoursework
         private void imgOxygenAns_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Copy;
+        }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form easyDragDropHelp = new easyDragDropHelp();
+            easyDragDropHelp.Show();
         }
 
         

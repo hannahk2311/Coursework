@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SSDCoursework
+namespace SSDCoursework.images
 {
-    public partial class matchingQuestionsHelp : Form
+    public partial class LoginForm : Form
     {
-        public matchingQuestionsHelp()
+        public LoginForm()
         {
             InitializeComponent();
         }

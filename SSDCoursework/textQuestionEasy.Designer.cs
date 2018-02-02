@@ -63,6 +63,7 @@
             this.imgCorrect5 = new System.Windows.Forms.PictureBox();
             this.imgIncorrect6 = new System.Windows.Forms.PictureBox();
             this.imgCorrect6 = new System.Windows.Forms.PictureBox();
+            this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).BeginInit();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -97,7 +99,7 @@
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
             this.label2.Location = new System.Drawing.Point(13, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 45);
+            this.label2.Size = new System.Drawing.Size(329, 45);
             this.label2.TabIndex = 47;
             this.label2.Text = "Textbox Question";
             // 
@@ -462,6 +464,18 @@
             this.imgCorrect6.TabStop = false;
             this.imgCorrect6.Visible = false;
             // 
+            // imgHelp
+            // 
+            this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgHelp.Image = global::SSDCoursework.Properties.Resources.help;
+            this.imgHelp.Location = new System.Drawing.Point(798, 11);
+            this.imgHelp.Name = "imgHelp";
+            this.imgHelp.Size = new System.Drawing.Size(51, 50);
+            this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgHelp.TabIndex = 137;
+            this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
+            // 
             // textQuestionEasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +484,8 @@
             this.BackgroundImage = global::SSDCoursework.Properties.Resources.pulse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(861, 492);
+            this.ControlBox = false;
+            this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgIncorrect6);
             this.Controls.Add(this.imgCorrect6);
             this.Controls.Add(this.imgIncorrect5);
@@ -506,9 +522,11 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "textQuestionEasy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "textQuestionEasy";
+            this.Text = "Textbox";
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).EndInit();
@@ -522,6 +540,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -564,5 +583,6 @@
         private System.Windows.Forms.PictureBox imgCorrect5;
         private System.Windows.Forms.PictureBox imgIncorrect6;
         private System.Windows.Forms.PictureBox imgCorrect6;
+        private System.Windows.Forms.PictureBox imgHelp;
     }
 }

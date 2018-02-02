@@ -66,7 +66,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to log out?", "Log out?",
+                MessageBox.Show("Are you sure you want to return to the menu?", "Exit Quiz?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -90,7 +90,7 @@ namespace SSDCoursework
             if(comboBox1.SelectedIndex == 0)
             {
                 imgCorrect1.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -101,7 +101,7 @@ namespace SSDCoursework
             if (comboBox2.SelectedIndex == 1)
             {
                 imgCorrect2.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -112,7 +112,7 @@ namespace SSDCoursework
             if (comboBox3.SelectedIndex == 1)
             {
                 imgCorrect3.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -123,7 +123,7 @@ namespace SSDCoursework
             if (comboBox4.SelectedIndex == 1)
             {
                 imgCorrect4.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -134,7 +134,7 @@ namespace SSDCoursework
             if (comboBox5.SelectedIndex == 0)
             {
                 imgCorrect5.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -145,7 +145,7 @@ namespace SSDCoursework
             if (comboBox6.SelectedIndex == 1)
             {
                 imgCorrect6.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -156,7 +156,7 @@ namespace SSDCoursework
             if (comboBox7.SelectedIndex == 2)
             {
                 imgCorrect7.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -167,7 +167,7 @@ namespace SSDCoursework
             if (comboBox8.SelectedIndex == 3)
             {
                 imgCorrect8.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -197,13 +197,19 @@ namespace SSDCoursework
             //advance to next question form
             this.Hide();
             thisPlayer.Score = Score;
-            Form matchingQuestions = new matchingQuestions(thisPlayer); //create instance of Form1 and pass it the object thisPlayer
+            Form matchingQuestions = new matchingQuestions(thisPlayer);
             matchingQuestions.Show();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form hardListboxHelp = new hardListboxHelp();
+            hardListboxHelp.Show();
         }
     }
 }

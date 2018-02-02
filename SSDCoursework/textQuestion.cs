@@ -36,7 +36,7 @@ namespace SSDCoursework
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to log out?", "Log out?",
+                MessageBox.Show("Are you sure you want to return to the menu?", "Exit Quiz?",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
@@ -59,7 +59,7 @@ namespace SSDCoursework
             if ((textBox1.Text == "location"))
             {
                 imgCorrect1.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -70,7 +70,7 @@ namespace SSDCoursework
             if ((textBox2.Text == "injury"))
             {
                 imgCorrect2.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -81,7 +81,7 @@ namespace SSDCoursework
             if ((textBox3.Text == "other services"))
             {
                 imgCorrect3.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -92,7 +92,7 @@ namespace SSDCoursework
             if ((textBox4.Text == "number injured"))
             {
                 imgCorrect4.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -103,7 +103,7 @@ namespace SSDCoursework
             if ((textBox5.Text == "extent of injury"))
             {
                 imgCorrect5.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -114,7 +114,7 @@ namespace SSDCoursework
             if ((textBox6.Text == "location repeated"))
             {
                 imgCorrect6.Visible = true;
-                Score += 1;
+                Score += 2;
                 lblScore.Text = Score.ToString();
             }
             else
@@ -175,6 +175,12 @@ namespace SSDCoursework
             {
                 //Do Nothing
             }
+        }
+
+        private void imgHelp_Click(object sender, EventArgs e)
+        {
+            Form hardTextboxHelp = new hardTextboxHelp();
+            hardTextboxHelp.Show();
         }
     }
 }

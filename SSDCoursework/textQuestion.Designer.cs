@@ -68,6 +68,7 @@
             this.imgIncorrect4 = new System.Windows.Forms.PictureBox();
             this.imgIncorrect5 = new System.Windows.Forms.PictureBox();
             this.imgIncorrect6 = new System.Windows.Forms.PictureBox();
+            this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect4)).BeginInit();
@@ -82,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -463,7 +465,7 @@
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 45);
+            this.label2.Size = new System.Drawing.Size(329, 45);
             this.label2.TabIndex = 34;
             this.label2.Text = "Textbox Question";
             // 
@@ -533,6 +535,18 @@
             this.imgIncorrect6.TabStop = false;
             this.imgIncorrect6.Visible = false;
             // 
+            // imgHelp
+            // 
+            this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgHelp.Image = global::SSDCoursework.Properties.Resources.help;
+            this.imgHelp.Location = new System.Drawing.Point(797, 4);
+            this.imgHelp.Name = "imgHelp";
+            this.imgHelp.Size = new System.Drawing.Size(51, 50);
+            this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgHelp.TabIndex = 136;
+            this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
+            // 
             // textQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,6 +556,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(859, 490);
             this.ControlBox = false;
+            this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgIncorrect6);
             this.Controls.Add(this.imgIncorrect5);
             this.Controls.Add(this.imgIncorrect4);
@@ -588,7 +603,7 @@
             this.MinimizeBox = false;
             this.Name = "textQuestion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "textQuestion";
+            this.Text = "Textbox";
             this.Load += new System.EventHandler(this.textQuestion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCorrect5)).EndInit();
@@ -604,6 +619,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgIncorrect6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -651,5 +667,6 @@
         private System.Windows.Forms.PictureBox imgIncorrect4;
         private System.Windows.Forms.PictureBox imgIncorrect5;
         private System.Windows.Forms.PictureBox imgIncorrect6;
+        private System.Windows.Forms.PictureBox imgHelp;
     }
 }

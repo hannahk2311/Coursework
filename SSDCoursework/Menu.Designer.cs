@@ -41,9 +41,11 @@
             this.lblHighScore = new System.Windows.Forms.Label();
             this.btnQuit = new System.Windows.Forms.Button();
             this.imgLogo = new System.Windows.Forms.PictureBox();
+            this.imgHelp = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // imgTitle
@@ -204,6 +206,18 @@
             this.imgLogo.TabIndex = 14;
             this.imgLogo.TabStop = false;
             // 
+            // imgHelp
+            // 
+            this.imgHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgHelp.Image = global::SSDCoursework.Properties.Resources.help;
+            this.imgHelp.Location = new System.Drawing.Point(640, 12);
+            this.imgHelp.Name = "imgHelp";
+            this.imgHelp.Size = new System.Drawing.Size(51, 50);
+            this.imgHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgHelp.TabIndex = 99;
+            this.imgHelp.TabStop = false;
+            this.imgHelp.Click += new System.EventHandler(this.imgHelp_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,6 +227,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(947, 564);
             this.ControlBox = false;
+            this.Controls.Add(this.imgHelp);
             this.Controls.Add(this.imgLogo);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.lblHighScore);
@@ -236,6 +251,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +272,6 @@
         private System.Windows.Forms.Label lblHighScore;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.PictureBox imgLogo;
+        private System.Windows.Forms.PictureBox imgHelp;
     }
 }

@@ -17,14 +17,11 @@ namespace SSDCoursework
             InitializeComponent();
         }
 
-        private void loginHelp_Load(object sender, EventArgs e)
-        { }
-
         private void btnReturn_Click(object sender, EventArgs e)
         {
             //forgiveness
             DialogResult result =
-                MessageBox.Show("Are you sure you want to leave this form?", "Return to Login Form",
+                MessageBox.Show("Are you sure?", "Close",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
             if (result.Equals(DialogResult.OK))
