@@ -27,7 +27,7 @@ namespace SSDCoursework
 
             
         }
-
+        #region populating combo boxes
         private void listboxQuestions_Load(object sender, EventArgs e)
         {
             //Question 1
@@ -61,7 +61,7 @@ namespace SSDCoursework
             comboBox8.Items.Add("calm");
             comboBox8.Items.Add("violent"); //CORRECT
         }
-
+        #endregion
         private void btnMenu_Click(object sender, EventArgs e)
         {
             //forgiveness
@@ -84,6 +84,7 @@ namespace SSDCoursework
             }
         }
 
+        #region submit button
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //COMBO BOX 1
@@ -191,12 +192,14 @@ namespace SSDCoursework
             //next button enabled so the user can advance through the quiz
             btnNext.Enabled = true;
         }
+        #endregion
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             //advance to next question form
             this.Hide();
             thisPlayer.Score = Score;
+            //thisPlayer.HighScore = Highscore;
             Form matchingQuestions = new matchingQuestions(thisPlayer);
             matchingQuestions.Show();
         }
@@ -208,6 +211,7 @@ namespace SSDCoursework
 
         private void imgHelp_Click(object sender, EventArgs e)
         {
+            //opens help form for question
             Form hardListboxHelp = new hardListboxHelp();
             hardListboxHelp.Show();
         }

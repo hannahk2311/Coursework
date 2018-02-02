@@ -26,21 +26,31 @@ namespace SSDCoursework
             lblHighScore.AutoSize = true;
         }
 
-        public void checkHighscore()
+        public void checkHighscore() //checks if score is bigger than high score / if user has a new high score
         {
-            if (thisPlayer.Score +1 > thisPlayer.HighScore)
+            if (thisPlayer.Score + 1 > thisPlayer.HighScore)
             {
-                lblHighScore.Text = "Congratulations! you have beaten your previous high score!\n- Your new high score is now" + thisPlayer.HighScore.ToString();
                 thisPlayer.HighScore = thisPlayer.Score;
+                lblHighScore.Text = "Congratulations! you have beaten your previous high score!\n- Your new high score is now" + thisPlayer.HighScore.ToString();
             }
-            else lblHighScore.Text = "You haven't beat your high score yet,\n- better luck next time!";
+            else
+            {
+                lblHighScore.Text = "You haven't beat your high score yet,\n- better luck next time!";
+            }
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form Menu = new Menu(thisPlayer);
-            Menu.Show();
+            if(MessageBox.Show("You will be taken to the Main Menu?", "Return to Main Menu?",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question)
+                == DialogResult.OK)
+            {
+                thisPlayer.Score = 0;
+                this.Hide();
+                Form Menu = new Menu(thisPlayer);
+                Menu.Show();
+            }
         }
     }
 }

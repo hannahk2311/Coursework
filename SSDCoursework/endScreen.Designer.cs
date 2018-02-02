@@ -52,11 +52,11 @@
             // lblHighScore
             // 
             this.lblHighScore.AutoSize = true;
-            this.lblHighScore.Font = new System.Drawing.Font("Arial Nova Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighScore.ForeColor = System.Drawing.Color.Lime;
             this.lblHighScore.Location = new System.Drawing.Point(30, 139);
             this.lblHighScore.Name = "lblHighScore";
-            this.lblHighScore.Size = new System.Drawing.Size(0, 23);
+            this.lblHighScore.Size = new System.Drawing.Size(0, 24);
             this.lblHighScore.TabIndex = 6;
             // 
             // label1
@@ -92,7 +92,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "endScreen";
-            this.Text = "endScreen";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

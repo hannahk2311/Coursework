@@ -74,12 +74,6 @@
     <Compile Include="endScreen.Designer.cs">
       <DependentUpon>endScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="finishScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="finishScreen.Designer.cs">
-      <DependentUpon>finishScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="hardDragDropHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,9 +205,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="endScreen.resx">
       <DependentUpon>endScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="finishScreen.resx">
-      <DependentUpon>finishScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hardDragDropHelp.resx">
       <DependentUpon>hardDragDropHelp.cs</DependentUpon>
